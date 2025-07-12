@@ -1,0 +1,31 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Playwright Results – Pie view</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <style>
+    body{font-family:system-ui,Arial,sans-serif;margin:2rem;}
+    h1{margin-bottom:0.5rem;} canvas{max-width:480px;margin:1rem auto;display:block;}
+  </style>
+</head>
+<body>
+  <h1>Playwright run summary</h1>
+  <p><strong>Passed:</strong> 78 &nbsp; <strong>Failed:</strong> 0 &nbsp; <strong>Flaky:</strong> 0</p>
+
+  <canvas id="pie"></canvas>
+  <script>
+    new Chart(document.getElementById('pie'), {
+      type: 'pie',
+      data: {
+        labels: ['Passed', 'Failed', 'Flaky'],
+        datasets: [{
+          data: [78, 0, 0],
+          backgroundColor: ['#4caf50','#f44336','#ffc107']
+        }]
+      }
+    });
+  </script>
+</body>
+</html>
