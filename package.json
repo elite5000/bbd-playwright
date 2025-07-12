@@ -1,18 +1,23 @@
 {
-  "name": "bbd-playwright",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {},
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
-  "devDependencies": {
-    "@playwright/test": "^1.54.1",
-    "@types/node": "^24.0.13"
-  },
-  "dependencies": {
-    "cheerio": "^1.1.0"
-  }
+    "name": "bbd-playwright",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "type": "commonjs",
+    "devDependencies": {
+        "@playwright/test": "^1.54.1",
+        "@types/node": "^24.0.13"
+    },
+    "scripts": {
+        "test": "npx playwright test",
+        "report": "ts-node custom-reporters/copy-custom-report-assets.ts && npx playwright show-report"
+    },
+    "dependencies": {
+        "cheerio": "^1.1.0",
+        "ts-node": "^10.9.2",
+        "tsc": "^2.0.4"
+    }
 }

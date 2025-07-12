@@ -1,41 +1,34 @@
-import type {
+import {
+    FullConfig,
     Reporter,
+    Suite,
     TestCase,
     TestResult,
-    Suite,
-    FullResult,
-    FullConfig,
 } from "@playwright/test/reporter";
-
-const fs = require("fs");
-const path = require("path");
+import fs from "fs";
+import path from "path";
 
 class CustomReporter implements Reporter {
-    private results: Array<{
-        id: number;
-        tag: any;
-        describe: any;
-        title: any;
-        status: any;
-        steps: any;
-    }> = [];
-    private testId = 1;
+    private results: any[] = [];
 
-    onTestEnd(test, result) {
+    onTestEnd(test: TestCase, result: TestResult) {
+        const { title, parent, location } = test;
+        const describe = parent.title;
         const tag =
             test.annotations.find((a) => a.type === "tag")?.description ||
-            "@untagged";
+            "untagged";
+
         const steps =
             result.steps?.map((s) => ({
-                name: s.title || s.location?.file || "step",
+                name: s.title,
                 status: s.error ? "failed" : "passed",
             })) || [];
 
         this.results.push({
-            id: this.testId++,
+            id: this.results.length + 1,
             tag,
-            describe: test.parent.title,
-            title: test.title,
+            describe,
+            title: title,
             status: result.status,
             steps,
         });
@@ -45,12 +38,13 @@ class CustomReporter implements Reporter {
         const output = {
             tests: this.results,
         };
-        const outPath = path.join(__dirname, "custom-report-data.ts");
-        fs.writeFileSync(
-            outPath,
-            `window.__REPORT__ = ${JSON.stringify(output, null, 2)};`
-        );
+        const reportDir = path.join(process.cwd(), "playwright-report");
+        fs.mkdirSync(reportDir, { recursive: true });
+
+        const jsonPath = path.join(reportDir, "custom-report-data.json");
+        fs.writeFileSync(jsonPath, JSON.stringify(output, null, 2));
+        console.log(`✅ Custom JSON report written to ${jsonPath}`);
     }
 }
 
-module.exports = CustomReporter;
+export default CustomReporter;
