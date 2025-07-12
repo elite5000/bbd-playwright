@@ -45,7 +45,7 @@ class CustomReporter implements Reporter {
         const output = {
             tests: this.results,
         };
-        const outPath = path.join(__dirname, "custom-report-data.js");
+        const outPath = path.join(__dirname, "custom-report-data.ts");
         fs.writeFileSync(
             outPath,
             `window.__REPORT__ = ${JSON.stringify(output, null, 2)};`
