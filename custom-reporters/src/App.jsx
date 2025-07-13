@@ -6,6 +6,7 @@ import TagChips from "./components/TagChips";
 import TestTree from "./components/TestTree";
 import TestModal from "./components/TestModal";
 import PieChart from "./components/PieChart";
+import TestInfo from "./components/test-info";
 
 function App() {
   const [reportData, setReportData] = useState({ tests: [] });
@@ -43,38 +44,44 @@ function App() {
 
   return (
     <div className="htmlreport vbox px-4 pb-4">
-      <header style={{ margin: "1rem", overflow: "hidden", display: "flex", gap: "1rem", width: "100%" }}>
-        <div className="square" style={{ flex: 1, width: "10%", float: "right" }}>
-          <PieChart counters={counters} />
-        </div>
-        <div className="header-view-status-container ml-2 pl-2 d-flex" style={{ width: "75%" }}>
-          <nav style={{ flex: "auto", width: "100%", float: "right" }}>
-            <SummaryBar
-              counters={counters}
-              selected={selectedFilters}
-              onSelect={(key) => {
-                setSelectedFilters((prev) =>
-                  prev.includes(key)
-                    ? prev.filter((k) => k !== key && k !== "all")
-                    : key === "all"
-                    ? ["all"]
-                    : prev.filter((k) => k !== "all").concat(key)
-                );
-              }}
-            />
-            <SearchBar value={search} onChange={setSearch} />
-            <TagChips
-              tags={tags}
-              selectedTags={selectedTags}
-              onToggle={(tag) =>
-                setSelectedTags((prev) =>
-                  prev.includes(tag)
-                    ? prev.filter((t) => t !== tag)
-                    : prev.concat(tag)
-                )
-              }
-            />
-          </nav>
+      <header style={{ margin: "1rem", overflow: "hidden", display: "flex", flexDirection: "column", gap: "1rem", width: "100%" }}>
+        <div style={{ display: "flex", gap: "1rem", width: "100%" }}>
+          <div className="square" style={{ flex: 1, width: "10%", float: "right" }}>
+            <PieChart counters={counters} />
+          </div>
+          <div className="header-view-status-container ml-2 pl-2 d-flex" style={{ width: "75%" }}>
+            <nav style={{ flex: "auto", width: "100%", float: "right", display: "flex", flexDirection: "column", gap: "0.5rem" }}>
+              <SummaryBar
+                counters={counters}
+                selected={selectedFilters}
+                onSelect={(key) => {
+                  setSelectedFilters((prev) =>
+                    prev.includes(key)
+                      ? prev.filter((k) => k !== key && k !== "all")
+                      : key === "all"
+                      ? ["all"]
+                      : prev.filter((k) => k !== "all").concat(key)
+                  );
+                }}
+              />
+              <div style={{ width: "100%", display: "flex", flexDirection: "column", gap: "0.25rem" }}>
+                <SearchBar value={search} onChange={setSearch} />
+                <TagChips
+                  tags={tags}
+                  selectedTags={selectedTags}
+                  onToggle={(tag) =>
+                    setSelectedTags((prev) =>
+                      prev.includes(tag)
+                        ? prev.filter((t) => t !== tag)
+                        : prev.concat(tag)
+                    )
+                  }
+                />
+              </div>
+              <TestInfo runEndDateTime={reportData.runEndDateTime} timeTakenMs={reportData.timeTakenMs} />
+            </nav>
+            
+          </div>
         </div>
       </header>
       <main id="tests-container" className="tree" style={{ padding: "0 1rem 2rem 1rem" }}>

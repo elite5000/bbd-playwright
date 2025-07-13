@@ -1,3 +1,4 @@
+import { TestInfo } from "@playwright/test";
 import {
     FullConfig,
     Reporter,
@@ -28,6 +29,10 @@ class CustomReporter implements Reporter {
             id: this.results.length + 1,
             tag,
             describe,
+            fileLocation: location,
+            timeTakenMs: result.duration,
+            project: test.parent.project()?.name,
+            retries: result.retry,
             title: title,
             status: result.status,
             steps,

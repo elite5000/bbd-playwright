@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import TestListItem from "./test-list-item";
 
 export default function TestTree({ tests, filter, tags, selectedTags, search }) {
   // Group by tag and describe
@@ -15,11 +16,11 @@ export default function TestTree({ tests, filter, tags, selectedTags, search }) 
   const [openDescribes, setOpenDescribes] = useState({});
 
   return (
-    <div className="tree">
+    <div className="chip">
       {Object.keys(grouped).sort().map((tag) => (
         <div key={tag}>
           <div
-            className="chip-header expanded-true"
+            className={`chip-header expanded-${!!openTags[tag]}`}
             role="button"
             onClick={() => setOpenTags((prev) => ({ ...prev, [tag]: !prev[tag] }))}
             style={{ cursor: "pointer" }}
@@ -30,11 +31,11 @@ export default function TestTree({ tests, filter, tags, selectedTags, search }) 
             <span> {tag}</span>
           </div>
           {openTags[tag] && (
-            <div className="chip-body chip-body-no-insets" role="region">
+            <div className="chip-body chip-body-no-insets" role="region" style={{ padding: "5px" }}>
               {Object.keys(grouped[tag]).sort().map((describe) => (
                 <div key={describe}>
                   <div
-                    className="chip-header expanded-true"
+                    className={`chip-header expanded-${!!openDescribes[tag + describe]}`}
                     role="button"
                     onClick={() =>
                       setOpenDescribes((prev) => ({
@@ -51,10 +52,8 @@ export default function TestTree({ tests, filter, tags, selectedTags, search }) 
                   </div>
                   {openDescribes[tag + describe] && (
                     <div className="chip-body chip-body-no-insets" role="region">
-                      {grouped[tag][describe].map((t) => (
-                        <div className="tree-item tree-leaf" key={t.id}>
-                          {t.title} – {t.status}
-                        </div>
+                      {grouped[tag][describe].map((test) => (
+                        <TestListItem test={test} key={`${test.id}-${test.title}`} />
                       ))}
                     </div>
                   )}

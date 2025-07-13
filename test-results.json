@@ -47,7 +47,7 @@
       {
         "outputDir": "C:/Projects/bbd playwright/test-results",
         "repeatEach": 1,
-        "retries": 0,
+        "retries": 1,
         "metadata": {
           "actualWorkers": 4
         },
@@ -63,7 +63,7 @@
       {
         "outputDir": "C:/Projects/bbd playwright/test-results",
         "repeatEach": 1,
-        "retries": 0,
+        "retries": 1,
         "metadata": {
           "actualWorkers": 4
         },
@@ -79,7 +79,7 @@
       {
         "outputDir": "C:/Projects/bbd playwright/test-results",
         "repeatEach": 1,
-        "retries": 0,
+        "retries": 1,
         "metadata": {
           "actualWorkers": 4
         },
@@ -123,12 +123,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 5696,
+                  "duration": 8172,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-07-12T12:18:48.489Z",
+                  "startTime": "2025-07-13T05:21:37.301Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -157,12 +157,12 @@
                   "workerIndex": 1,
                   "parallelIndex": 1,
                   "status": "passed",
-                  "duration": 6551,
+                  "duration": 8950,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-07-12T12:18:48.482Z",
+                  "startTime": "2025-07-13T05:21:37.292Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -189,14 +189,14 @@
               "results": [
                 {
                   "workerIndex": 4,
-                  "parallelIndex": 2,
+                  "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 4836,
+                  "duration": 4377,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-07-12T12:19:04.603Z",
+                  "startTime": "2025-07-13T05:21:56.170Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -225,12 +225,12 @@
                   "workerIndex": 5,
                   "parallelIndex": 1,
                   "status": "passed",
-                  "duration": 7908,
+                  "duration": 5688,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-07-12T12:19:04.813Z",
+                  "startTime": "2025-07-13T05:21:56.328Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -257,14 +257,14 @@
               "results": [
                 {
                   "workerIndex": 9,
-                  "parallelIndex": 1,
+                  "parallelIndex": 3,
                   "status": "passed",
-                  "duration": 2471,
+                  "duration": 1390,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-07-12T12:19:44.946Z",
+                  "startTime": "2025-07-13T05:22:22.026Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -291,14 +291,14 @@
               "results": [
                 {
                   "workerIndex": 10,
-                  "parallelIndex": 0,
+                  "parallelIndex": 1,
                   "status": "passed",
-                  "duration": 4148,
+                  "duration": 1872,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-07-12T12:19:45.206Z",
+                  "startTime": "2025-07-13T05:22:22.129Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -342,12 +342,12 @@
                       "workerIndex": 2,
                       "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 5557,
+                      "duration": 6565,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-12T12:18:48.540Z",
+                      "startTime": "2025-07-13T05:21:37.311Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -358,7 +358,7 @@
               "id": "0a034f6fd6168a682854-15f90025c59f4fa41f29",
               "file": "tests-examples/demo-todo-app.spec.ts",
               "line": 14,
-              "column": 7
+              "column": 9
             },
             {
               "title": "should clear text input field when an item is added",
@@ -376,12 +376,12 @@
                       "workerIndex": 3,
                       "parallelIndex": 3,
                       "status": "passed",
-                      "duration": 5601,
+                      "duration": 6533,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-12T12:18:48.493Z",
+                      "startTime": "2025-07-13T05:21:37.324Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -392,7 +392,7 @@
               "id": "0a034f6fd6168a682854-4dcdc06e4c4e4b798fa3",
               "file": "tests-examples/demo-todo-app.spec.ts",
               "line": 40,
-              "column": 7
+              "column": 9
             },
             {
               "title": "should append new items to the bottom of the list",
@@ -410,12 +410,12 @@
                       "workerIndex": 3,
                       "parallelIndex": 3,
                       "status": "passed",
-                      "duration": 1145,
+                      "duration": 3051,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-12T12:18:54.872Z",
+                      "startTime": "2025-07-13T05:21:44.090Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -425,8 +425,8 @@
               ],
               "id": "0a034f6fd6168a682854-9d5a27db66e181d651f3",
               "file": "tests-examples/demo-todo-app.spec.ts",
-              "line": 53,
-              "column": 7
+              "line": 55,
+              "column": 9
             },
             {
               "title": "should allow me to add todo items",
@@ -442,14 +442,14 @@
                   "results": [
                     {
                       "workerIndex": 6,
-                      "parallelIndex": 3,
+                      "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 8418,
+                      "duration": 5503,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-12T12:19:05.206Z",
+                      "startTime": "2025-07-13T05:21:56.457Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -460,7 +460,7 @@
               "id": "0a034f6fd6168a682854-0c2f4c10ffffdeb8cc5c",
               "file": "tests-examples/demo-todo-app.spec.ts",
               "line": 14,
-              "column": 7
+              "column": 9
             },
             {
               "title": "should clear text input field when an item is added",
@@ -475,15 +475,15 @@
                   "projectName": "firefox",
                   "results": [
                     {
-                      "workerIndex": 7,
+                      "workerIndex": 4,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 7154,
+                      "duration": 3108,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-12T12:19:05.319Z",
+                      "startTime": "2025-07-13T05:22:01.428Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -494,7 +494,7 @@
               "id": "0a034f6fd6168a682854-c4fbaff888e00297caec",
               "file": "tests-examples/demo-todo-app.spec.ts",
               "line": 40,
-              "column": 7
+              "column": 9
             },
             {
               "title": "should append new items to the bottom of the list",
@@ -509,15 +509,15 @@
                   "projectName": "firefox",
                   "results": [
                     {
-                      "workerIndex": 4,
-                      "parallelIndex": 2,
+                      "workerIndex": 5,
+                      "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 5286,
+                      "duration": 2476,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-12T12:19:11.897Z",
+                      "startTime": "2025-07-13T05:22:03.468Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -527,8 +527,8 @@
               ],
               "id": "0a034f6fd6168a682854-b6697b137ecb52c84a69",
               "file": "tests-examples/demo-todo-app.spec.ts",
-              "line": 53,
-              "column": 7
+              "line": 55,
+              "column": 9
             },
             {
               "title": "should allow me to add todo items",
@@ -543,15 +543,15 @@
                   "projectName": "webkit",
                   "results": [
                     {
-                      "workerIndex": 8,
+                      "workerIndex": 11,
                       "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 3452,
+                      "duration": 1743,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-12T12:19:44.880Z",
+                      "startTime": "2025-07-13T05:22:22.277Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -562,7 +562,7 @@
               "id": "0a034f6fd6168a682854-129932a84c50bba1db7e",
               "file": "tests-examples/demo-todo-app.spec.ts",
               "line": 14,
-              "column": 7
+              "column": 9
             },
             {
               "title": "should clear text input field when an item is added",
@@ -577,15 +577,15 @@
                   "projectName": "webkit",
                   "results": [
                     {
-                      "workerIndex": 11,
+                      "workerIndex": 9,
                       "parallelIndex": 3,
                       "status": "passed",
-                      "duration": 2793,
+                      "duration": 959,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-12T12:19:46.837Z",
+                      "startTime": "2025-07-13T05:22:23.541Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -596,7 +596,7 @@
               "id": "0a034f6fd6168a682854-22c57eaf240a0ece92a3",
               "file": "tests-examples/demo-todo-app.spec.ts",
               "line": 40,
-              "column": 7
+              "column": 9
             },
             {
               "title": "should append new items to the bottom of the list",
@@ -611,15 +611,15 @@
                   "projectName": "webkit",
                   "results": [
                     {
-                      "workerIndex": 9,
+                      "workerIndex": 10,
                       "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 2957,
+                      "duration": 1817,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-12T12:19:49.502Z",
+                      "startTime": "2025-07-13T05:22:24.167Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -629,15 +629,15 @@
               ],
               "id": "0a034f6fd6168a682854-8d28ee742df544bc6bf5",
               "file": "tests-examples/demo-todo-app.spec.ts",
-              "line": 53,
-              "column": 7
+              "line": 55,
+              "column": 9
             }
           ]
         },
         {
           "title": "Mark all as completed",
           "file": "tests-examples/demo-todo-app.spec.ts",
-          "line": 72,
+          "line": 76,
           "column": 6,
           "specs": [
             {
@@ -656,12 +656,12 @@
                       "workerIndex": 2,
                       "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 1280,
+                      "duration": 3031,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-12T12:18:54.925Z",
+                      "startTime": "2025-07-13T05:21:44.125Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -671,8 +671,8 @@
               ],
               "id": "0a034f6fd6168a682854-02ff47e6de0ab7241ab9",
               "file": "tests-examples/demo-todo-app.spec.ts",
-              "line": 82,
-              "column": 7
+              "line": 86,
+              "column": 9
             },
             {
               "title": "should allow me to clear the complete state of all items",
@@ -690,12 +690,12 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 1262,
+                      "duration": 2797,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-12T12:18:55.137Z",
+                      "startTime": "2025-07-13T05:21:45.708Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -705,8 +705,8 @@
               ],
               "id": "0a034f6fd6168a682854-019e46fdfd4b49ce745e",
               "file": "tests-examples/demo-todo-app.spec.ts",
-              "line": 91,
-              "column": 7
+              "line": 99,
+              "column": 9
             },
             {
               "title": "complete all checkbox should update state when items are completed / cleared",
@@ -724,12 +724,12 @@
                       "workerIndex": 1,
                       "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 1231,
+                      "duration": 3183,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-12T12:18:55.861Z",
+                      "startTime": "2025-07-13T05:21:46.547Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -739,8 +739,8 @@
               ],
               "id": "0a034f6fd6168a682854-068242540710e0ef8a06",
               "file": "tests-examples/demo-todo-app.spec.ts",
-              "line": 101,
-              "column": 7
+              "line": 111,
+              "column": 9
             },
             {
               "title": "should allow me to mark all items as completed",
@@ -755,15 +755,15 @@
                   "projectName": "firefox",
                   "results": [
                     {
-                      "workerIndex": 7,
-                      "parallelIndex": 0,
+                      "workerIndex": 6,
+                      "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 5088,
+                      "duration": 2148,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-12T12:19:16.160Z",
+                      "startTime": "2025-07-13T05:22:04.331Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -773,8 +773,8 @@
               ],
               "id": "0a034f6fd6168a682854-017197433dfbbf498337",
               "file": "tests-examples/demo-todo-app.spec.ts",
-              "line": 82,
-              "column": 7
+              "line": 86,
+              "column": 9
             },
             {
               "title": "should allow me to clear the complete state of all items",
@@ -790,14 +790,14 @@
                   "results": [
                     {
                       "workerIndex": 4,
-                      "parallelIndex": 2,
+                      "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 6341,
+                      "duration": 2395,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-12T12:19:17.266Z",
+                      "startTime": "2025-07-13T05:22:04.552Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -807,8 +807,8 @@
               ],
               "id": "0a034f6fd6168a682854-4294781c233564c795c3",
               "file": "tests-examples/demo-todo-app.spec.ts",
-              "line": 91,
-              "column": 7
+              "line": 99,
+              "column": 9
             },
             {
               "title": "complete all checkbox should update state when items are completed / cleared",
@@ -826,12 +826,12 @@
                       "workerIndex": 5,
                       "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 7294,
+                      "duration": 3217,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-12T12:19:19.361Z",
+                      "startTime": "2025-07-13T05:22:05.952Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -841,8 +841,8 @@
               ],
               "id": "0a034f6fd6168a682854-0aa4ccb0568a0f45fed6",
               "file": "tests-examples/demo-todo-app.spec.ts",
-              "line": 101,
-              "column": 7
+              "line": 111,
+              "column": 9
             },
             {
               "title": "should allow me to mark all items as completed",
@@ -858,14 +858,14 @@
                   "results": [
                     {
                       "workerIndex": 11,
-                      "parallelIndex": 3,
+                      "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 3868,
+                      "duration": 2718,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-12T12:19:49.778Z",
+                      "startTime": "2025-07-13T05:22:24.155Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -875,8 +875,8 @@
               ],
               "id": "0a034f6fd6168a682854-4e0ac57b00be5eb37840",
               "file": "tests-examples/demo-todo-app.spec.ts",
-              "line": 82,
-              "column": 7
+              "line": 86,
+              "column": 9
             },
             {
               "title": "should allow me to clear the complete state of all items",
@@ -891,15 +891,15 @@
                   "projectName": "webkit",
                   "results": [
                     {
-                      "workerIndex": 8,
-                      "parallelIndex": 2,
+                      "workerIndex": 9,
+                      "parallelIndex": 3,
                       "status": "passed",
-                      "duration": 4559,
+                      "duration": 3453,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-12T12:19:50.403Z",
+                      "startTime": "2025-07-13T05:22:24.513Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -909,8 +909,8 @@
               ],
               "id": "0a034f6fd6168a682854-e90bacd16bedf6c07720",
               "file": "tests-examples/demo-todo-app.spec.ts",
-              "line": 91,
-              "column": 7
+              "line": 99,
+              "column": 9
             },
             {
               "title": "complete all checkbox should update state when items are completed / cleared",
@@ -926,14 +926,14 @@
                   "results": [
                     {
                       "workerIndex": 10,
-                      "parallelIndex": 0,
+                      "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 5277,
+                      "duration": 3978,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-12T12:19:51.134Z",
+                      "startTime": "2025-07-13T05:22:25.995Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -943,15 +943,15 @@
               ],
               "id": "0a034f6fd6168a682854-8dbe963508b39f72fc53",
               "file": "tests-examples/demo-todo-app.spec.ts",
-              "line": 101,
-              "column": 7
+              "line": 111,
+              "column": 9
             }
           ]
         },
         {
           "title": "Item",
           "file": "tests-examples/demo-todo-app.spec.ts",
-          "line": 122,
+          "line": 134,
           "column": 6,
           "specs": [
             {
@@ -970,12 +970,12 @@
                       "workerIndex": 3,
                       "parallelIndex": 3,
                       "status": "passed",
-                      "duration": 1006,
+                      "duration": 2517,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-12T12:18:56.037Z",
+                      "startTime": "2025-07-13T05:21:47.149Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -985,8 +985,8 @@
               ],
               "id": "0a034f6fd6168a682854-99a727c92b21a61330c6",
               "file": "tests-examples/demo-todo-app.spec.ts",
-              "line": 124,
-              "column": 7
+              "line": 135,
+              "column": 9
             },
             {
               "title": "should allow me to un-mark items as complete",
@@ -1004,12 +1004,12 @@
                       "workerIndex": 2,
                       "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 993,
+                      "duration": 2499,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-12T12:18:56.225Z",
+                      "startTime": "2025-07-13T05:21:47.170Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1019,8 +1019,8 @@
               ],
               "id": "0a034f6fd6168a682854-846ffda27653037e825e",
               "file": "tests-examples/demo-todo-app.spec.ts",
-              "line": 149,
-              "column": 7
+              "line": 160,
+              "column": 9
             },
             {
               "title": "should allow me to edit an item",
@@ -1038,12 +1038,12 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 987,
+                      "duration": 2161,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-12T12:18:56.426Z",
+                      "startTime": "2025-07-13T05:21:48.542Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1053,8 +1053,8 @@
               ],
               "id": "0a034f6fd6168a682854-606face22366ea533891",
               "file": "tests-examples/demo-todo-app.spec.ts",
-              "line": 174,
-              "column": 7
+              "line": 185,
+              "column": 9
             },
             {
               "title": "should allow me to mark items as complete",
@@ -1069,15 +1069,15 @@
                   "projectName": "firefox",
                   "results": [
                     {
-                      "workerIndex": 7,
-                      "parallelIndex": 0,
+                      "workerIndex": 6,
+                      "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 2930,
+                      "duration": 2501,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-12T12:19:21.292Z",
+                      "startTime": "2025-07-13T05:22:06.498Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1087,8 +1087,8 @@
               ],
               "id": "0a034f6fd6168a682854-f6ada2c069ca1f600e73",
               "file": "tests-examples/demo-todo-app.spec.ts",
-              "line": 124,
-              "column": 7
+              "line": 135,
+              "column": 9
             },
             {
               "title": "should allow me to un-mark items as complete",
@@ -1103,15 +1103,15 @@
                   "projectName": "firefox",
                   "results": [
                     {
-                      "workerIndex": 6,
-                      "parallelIndex": 3,
+                      "workerIndex": 4,
+                      "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 3118,
+                      "duration": 2113,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-12T12:19:21.710Z",
+                      "startTime": "2025-07-13T05:22:06.955Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1121,8 +1121,8 @@
               ],
               "id": "0a034f6fd6168a682854-1ff7fe170b6390aec498",
               "file": "tests-examples/demo-todo-app.spec.ts",
-              "line": 149,
-              "column": 7
+              "line": 160,
+              "column": 9
             },
             {
               "title": "should allow me to edit an item",
@@ -1137,15 +1137,15 @@
                   "projectName": "firefox",
                   "results": [
                     {
-                      "workerIndex": 4,
+                      "workerIndex": 6,
                       "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 3143,
+                      "duration": 2789,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-12T12:19:23.638Z",
+                      "startTime": "2025-07-13T05:22:09.007Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1155,8 +1155,8 @@
               ],
               "id": "0a034f6fd6168a682854-284745e9a56dfea14ed4",
               "file": "tests-examples/demo-todo-app.spec.ts",
-              "line": 174,
-              "column": 7
+              "line": 185,
+              "column": 9
             },
             {
               "title": "should allow me to mark items as complete",
@@ -1171,15 +1171,15 @@
                   "projectName": "webkit",
                   "results": [
                     {
-                      "workerIndex": 9,
-                      "parallelIndex": 1,
+                      "workerIndex": 11,
+                      "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 3643,
+                      "duration": 2761,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-12T12:19:52.488Z",
+                      "startTime": "2025-07-13T05:22:26.884Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1189,8 +1189,8 @@
               ],
               "id": "0a034f6fd6168a682854-3346b03081261b328bbc",
               "file": "tests-examples/demo-todo-app.spec.ts",
-              "line": 124,
-              "column": 7
+              "line": 135,
+              "column": 9
             },
             {
               "title": "should allow me to un-mark items as complete",
@@ -1205,15 +1205,15 @@
                   "projectName": "webkit",
                   "results": [
                     {
-                      "workerIndex": 11,
+                      "workerIndex": 9,
                       "parallelIndex": 3,
                       "status": "passed",
-                      "duration": 3733,
+                      "duration": 2903,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-12T12:19:53.662Z",
+                      "startTime": "2025-07-13T05:22:27.985Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1223,8 +1223,8 @@
               ],
               "id": "0a034f6fd6168a682854-aba7debe5dff62877a98",
               "file": "tests-examples/demo-todo-app.spec.ts",
-              "line": 149,
-              "column": 7
+              "line": 160,
+              "column": 9
             },
             {
               "title": "should allow me to edit an item",
@@ -1239,15 +1239,15 @@
                   "projectName": "webkit",
                   "results": [
                     {
-                      "workerIndex": 8,
+                      "workerIndex": 11,
                       "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 4629,
+                      "duration": 3910,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-12T12:19:54.978Z",
+                      "startTime": "2025-07-13T05:22:29.655Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1257,15 +1257,15 @@
               ],
               "id": "0a034f6fd6168a682854-53743432a5ce598328c7",
               "file": "tests-examples/demo-todo-app.spec.ts",
-              "line": 174,
-              "column": 7
+              "line": 185,
+              "column": 9
             }
           ]
         },
         {
           "title": "Editing",
           "file": "tests-examples/demo-todo-app.spec.ts",
-          "line": 194,
+          "line": 209,
           "column": 6,
           "specs": [
             {
@@ -1284,12 +1284,12 @@
                       "workerIndex": 3,
                       "parallelIndex": 3,
                       "status": "passed",
-                      "duration": 916,
+                      "duration": 2652,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-12T12:18:57.058Z",
+                      "startTime": "2025-07-13T05:21:49.674Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1299,8 +1299,8 @@
               ],
               "id": "0a034f6fd6168a682854-eca8d34275f5dc4b4dbd",
               "file": "tests-examples/demo-todo-app.spec.ts",
-              "line": 200,
-              "column": 7
+              "line": 215,
+              "column": 9
             },
             {
               "title": "should save edits on blur",
@@ -1315,15 +1315,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 1,
-                      "parallelIndex": 1,
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 965,
+                      "duration": 2663,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-12T12:18:57.142Z",
+                      "startTime": "2025-07-13T05:21:49.678Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1333,8 +1333,8 @@
               ],
               "id": "0a034f6fd6168a682854-a0a95dac343ce8f95e95",
               "file": "tests-examples/demo-todo-app.spec.ts",
-              "line": 210,
-              "column": 7
+              "line": 227,
+              "column": 9
             },
             {
               "title": "should trim entered text",
@@ -1349,15 +1349,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 2,
-                      "parallelIndex": 2,
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 1087,
+                      "duration": 2609,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-12T12:18:57.230Z",
+                      "startTime": "2025-07-13T05:21:49.742Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1367,8 +1367,8 @@
               ],
               "id": "0a034f6fd6168a682854-8df4e4827a7feec71cb9",
               "file": "tests-examples/demo-todo-app.spec.ts",
-              "line": 224,
-              "column": 7
+              "line": 247,
+              "column": 9
             },
             {
               "title": "should remove the item if an empty text string was entered",
@@ -1386,12 +1386,12 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 1029,
+                      "duration": 1932,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-12T12:18:57.427Z",
+                      "startTime": "2025-07-13T05:21:50.709Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1401,8 +1401,8 @@
               ],
               "id": "0a034f6fd6168a682854-85b371778729147135cc",
               "file": "tests-examples/demo-todo-app.spec.ts",
-              "line": 238,
-              "column": 7
+              "line": 267,
+              "column": 9
             },
             {
               "title": "should cancel edits on escape",
@@ -1420,12 +1420,12 @@
                       "workerIndex": 3,
                       "parallelIndex": 3,
                       "status": "passed",
-                      "duration": 941,
+                      "duration": 596,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-12T12:18:57.993Z",
+                      "startTime": "2025-07-13T05:21:52.336Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1435,8 +1435,8 @@
               ],
               "id": "0a034f6fd6168a682854-3ac8742484e134f994f3",
               "file": "tests-examples/demo-todo-app.spec.ts",
-              "line": 250,
-              "column": 7
+              "line": 281,
+              "column": 9
             },
             {
               "title": "should hide other controls when editing",
@@ -1451,15 +1451,15 @@
                   "projectName": "firefox",
                   "results": [
                     {
-                      "workerIndex": 7,
+                      "workerIndex": 4,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 2200,
+                      "duration": 2820,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-12T12:19:24.264Z",
+                      "startTime": "2025-07-13T05:22:09.077Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1469,8 +1469,8 @@
               ],
               "id": "0a034f6fd6168a682854-a49168bc21d26417b5a4",
               "file": "tests-examples/demo-todo-app.spec.ts",
-              "line": 200,
-              "column": 7
+              "line": 215,
+              "column": 9
             },
             {
               "title": "should save edits on blur",
@@ -1485,15 +1485,15 @@
                   "projectName": "firefox",
                   "results": [
                     {
-                      "workerIndex": 6,
-                      "parallelIndex": 3,
+                      "workerIndex": 5,
+                      "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 3598,
+                      "duration": 2568,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-12T12:19:24.850Z",
+                      "startTime": "2025-07-13T05:22:09.179Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1503,8 +1503,8 @@
               ],
               "id": "0a034f6fd6168a682854-21614dbbabd557ea9df1",
               "file": "tests-examples/demo-todo-app.spec.ts",
-              "line": 210,
-              "column": 7
+              "line": 227,
+              "column": 9
             },
             {
               "title": "should trim entered text",
@@ -1519,15 +1519,15 @@
                   "projectName": "firefox",
                   "results": [
                     {
-                      "workerIndex": 7,
-                      "parallelIndex": 0,
+                      "workerIndex": 8,
+                      "parallelIndex": 3,
                       "status": "passed",
-                      "duration": 2292,
+                      "duration": 4929,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-12T12:19:26.500Z",
+                      "startTime": "2025-07-13T05:22:11.990Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1537,8 +1537,8 @@
               ],
               "id": "0a034f6fd6168a682854-39cbeed33d253f5da167",
               "file": "tests-examples/demo-todo-app.spec.ts",
-              "line": 224,
-              "column": 7
+              "line": 247,
+              "column": 9
             },
             {
               "title": "should remove the item if an empty text string was entered",
@@ -1556,12 +1556,12 @@
                       "workerIndex": 5,
                       "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 2644,
+                      "duration": 1559,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-12T12:19:26.749Z",
+                      "startTime": "2025-07-13T05:22:11.755Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1571,8 +1571,8 @@
               ],
               "id": "0a034f6fd6168a682854-c676a8e18771f17a7b93",
               "file": "tests-examples/demo-todo-app.spec.ts",
-              "line": 238,
-              "column": 7
+              "line": 267,
+              "column": 9
             },
             {
               "title": "should cancel edits on escape",
@@ -1587,15 +1587,15 @@
                   "projectName": "firefox",
                   "results": [
                     {
-                      "workerIndex": 4,
+                      "workerIndex": 6,
                       "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 2195,
+                      "duration": 1610,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-12T12:19:26.809Z",
+                      "startTime": "2025-07-13T05:22:11.815Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1605,8 +1605,8 @@
               ],
               "id": "0a034f6fd6168a682854-f2fb0ffa1c260b4e3ea0",
               "file": "tests-examples/demo-todo-app.spec.ts",
-              "line": 250,
-              "column": 7
+              "line": 281,
+              "column": 9
             },
             {
               "title": "should hide other controls when editing",
@@ -1621,15 +1621,15 @@
                   "projectName": "webkit",
                   "results": [
                     {
-                      "workerIndex": 9,
+                      "workerIndex": 10,
                       "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 2952,
+                      "duration": 2553,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-12T12:19:56.142Z",
+                      "startTime": "2025-07-13T05:22:29.984Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1639,8 +1639,8 @@
               ],
               "id": "0a034f6fd6168a682854-329c743a32dd2e82dc22",
               "file": "tests-examples/demo-todo-app.spec.ts",
-              "line": 200,
-              "column": 7
+              "line": 215,
+              "column": 9
             },
             {
               "title": "should save edits on blur",
@@ -1655,15 +1655,15 @@
                   "projectName": "webkit",
                   "results": [
                     {
-                      "workerIndex": 10,
-                      "parallelIndex": 0,
+                      "workerIndex": 9,
+                      "parallelIndex": 3,
                       "status": "passed",
-                      "duration": 3998,
+                      "duration": 2958,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-12T12:19:56.435Z",
+                      "startTime": "2025-07-13T05:22:30.898Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1673,8 +1673,8 @@
               ],
               "id": "0a034f6fd6168a682854-4d38cccadc68d0c812a1",
               "file": "tests-examples/demo-todo-app.spec.ts",
-              "line": 210,
-              "column": 7
+              "line": 227,
+              "column": 9
             },
             {
               "title": "should trim entered text",
@@ -1689,15 +1689,15 @@
                   "projectName": "webkit",
                   "results": [
                     {
-                      "workerIndex": 11,
-                      "parallelIndex": 3,
+                      "workerIndex": 10,
+                      "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 4528,
+                      "duration": 2068,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-12T12:19:57.407Z",
+                      "startTime": "2025-07-13T05:22:32.547Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1707,8 +1707,8 @@
               ],
               "id": "0a034f6fd6168a682854-789a33b564fce0e1641f",
               "file": "tests-examples/demo-todo-app.spec.ts",
-              "line": 224,
-              "column": 7
+              "line": 247,
+              "column": 9
             },
             {
               "title": "should remove the item if an empty text string was entered",
@@ -1723,15 +1723,15 @@
                   "projectName": "webkit",
                   "results": [
                     {
-                      "workerIndex": 9,
-                      "parallelIndex": 1,
+                      "workerIndex": 11,
+                      "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 4134,
+                      "duration": 1963,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-12T12:19:59.108Z",
+                      "startTime": "2025-07-13T05:22:33.580Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1741,8 +1741,8 @@
               ],
               "id": "0a034f6fd6168a682854-d049561803f60dbf28d1",
               "file": "tests-examples/demo-todo-app.spec.ts",
-              "line": 238,
-              "column": 7
+              "line": 267,
+              "column": 9
             },
             {
               "title": "should cancel edits on escape",
@@ -1757,15 +1757,15 @@
                   "projectName": "webkit",
                   "results": [
                     {
-                      "workerIndex": 8,
-                      "parallelIndex": 2,
+                      "workerIndex": 9,
+                      "parallelIndex": 3,
                       "status": "passed",
-                      "duration": 4054,
+                      "duration": 2249,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-12T12:19:59.629Z",
+                      "startTime": "2025-07-13T05:22:33.863Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1775,15 +1775,15 @@
               ],
               "id": "0a034f6fd6168a682854-d774a7a7262c8e394fd3",
               "file": "tests-examples/demo-todo-app.spec.ts",
-              "line": 250,
-              "column": 7
+              "line": 281,
+              "column": 9
             }
           ]
         },
         {
           "title": "Counter",
           "file": "tests-examples/demo-todo-app.spec.ts",
-          "line": 259,
+          "line": 296,
           "column": 6,
           "specs": [
             {
@@ -1799,15 +1799,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 1,
-                      "parallelIndex": 1,
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 799,
+                      "duration": 545,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-12T12:18:58.119Z",
+                      "startTime": "2025-07-13T05:21:52.349Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1817,8 +1817,8 @@
               ],
               "id": "0a034f6fd6168a682854-f8d14dd8996fe14a7a5f",
               "file": "tests-examples/demo-todo-app.spec.ts",
-              "line": 260,
-              "column": 7
+              "line": 297,
+              "column": 9
             },
             {
               "title": "should display the current number of todo items",
@@ -1833,15 +1833,15 @@
                   "projectName": "firefox",
                   "results": [
                     {
-                      "workerIndex": 6,
-                      "parallelIndex": 3,
+                      "workerIndex": 4,
+                      "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 2003,
+                      "duration": 1401,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-12T12:19:28.487Z",
+                      "startTime": "2025-07-13T05:22:11.908Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1851,8 +1851,8 @@
               ],
               "id": "0a034f6fd6168a682854-9681e8496a3a1a7421a9",
               "file": "tests-examples/demo-todo-app.spec.ts",
-              "line": 260,
-              "column": 7
+              "line": 297,
+              "column": 9
             },
             {
               "title": "should display the current number of todo items",
@@ -1868,14 +1868,14 @@
                   "results": [
                     {
                       "workerIndex": 10,
-                      "parallelIndex": 0,
+                      "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 1859,
+                      "duration": 1225,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-12T12:20:00.447Z",
+                      "startTime": "2025-07-13T05:22:34.628Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1885,15 +1885,15 @@
               ],
               "id": "0a034f6fd6168a682854-2a20971ecd143c1c13fc",
               "file": "tests-examples/demo-todo-app.spec.ts",
-              "line": 260,
-              "column": 7
+              "line": 297,
+              "column": 9
             }
           ]
         },
         {
           "title": "Clear completed button",
           "file": "tests-examples/demo-todo-app.spec.ts",
-          "line": 280,
+          "line": 319,
           "column": 6,
           "specs": [
             {
@@ -1909,15 +1909,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 2,
-                      "parallelIndex": 2,
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 951,
+                      "duration": 600,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-12T12:18:58.330Z",
+                      "startTime": "2025-07-13T05:21:52.360Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1927,8 +1927,8 @@
               ],
               "id": "0a034f6fd6168a682854-2f009cc506bf9b2d1d8e",
               "file": "tests-examples/demo-todo-app.spec.ts",
-              "line": 285,
-              "column": 7
+              "line": 324,
+              "column": 9
             },
             {
               "title": "should remove completed items when clicked",
@@ -1946,12 +1946,12 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 946,
+                      "duration": 744,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-12T12:18:58.474Z",
+                      "startTime": "2025-07-13T05:21:52.650Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1961,8 +1961,8 @@
               ],
               "id": "0a034f6fd6168a682854-4b5d7ba5ab75d1d84db7",
               "file": "tests-examples/demo-todo-app.spec.ts",
-              "line": 290,
-              "column": 7
+              "line": 331,
+              "column": 9
             },
             {
               "title": "should be hidden when there are no items that are completed",
@@ -1977,15 +1977,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 1,
-                      "parallelIndex": 1,
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 1022,
+                      "duration": 831,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-12T12:18:58.933Z",
+                      "startTime": "2025-07-13T05:21:52.904Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1995,8 +1995,8 @@
               ],
               "id": "0a034f6fd6168a682854-dd946bda6aa91b85c578",
               "file": "tests-examples/demo-todo-app.spec.ts",
-              "line": 298,
-              "column": 7
+              "line": 339,
+              "column": 9
             },
             {
               "title": "should display the correct text",
@@ -2011,15 +2011,15 @@
                   "projectName": "firefox",
                   "results": [
                     {
-                      "workerIndex": 7,
+                      "workerIndex": 4,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 1802,
+                      "duration": 1629,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-12T12:19:28.834Z",
+                      "startTime": "2025-07-13T05:22:13.362Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2029,8 +2029,8 @@
               ],
               "id": "0a034f6fd6168a682854-0fa1f82a7a1aaf7fd859",
               "file": "tests-examples/demo-todo-app.spec.ts",
-              "line": 285,
-              "column": 7
+              "line": 324,
+              "column": 9
             },
             {
               "title": "should remove completed items when clicked",
@@ -2045,15 +2045,15 @@
                   "projectName": "firefox",
                   "results": [
                     {
-                      "workerIndex": 4,
-                      "parallelIndex": 2,
+                      "workerIndex": 5,
+                      "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 3488,
+                      "duration": 1782,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-12T12:19:29.019Z",
+                      "startTime": "2025-07-13T05:22:13.364Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2063,8 +2063,8 @@
               ],
               "id": "0a034f6fd6168a682854-fad025a6bb04ad55f182",
               "file": "tests-examples/demo-todo-app.spec.ts",
-              "line": 290,
-              "column": 7
+              "line": 331,
+              "column": 9
             },
             {
               "title": "should be hidden when there are no items that are completed",
@@ -2079,15 +2079,15 @@
                   "projectName": "firefox",
                   "results": [
                     {
-                      "workerIndex": 5,
-                      "parallelIndex": 1,
+                      "workerIndex": 6,
+                      "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 3347,
+                      "duration": 1993,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-12T12:19:29.419Z",
+                      "startTime": "2025-07-13T05:22:13.437Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2097,8 +2097,8 @@
               ],
               "id": "0a034f6fd6168a682854-384b690e79512da9e5b2",
               "file": "tests-examples/demo-todo-app.spec.ts",
-              "line": 298,
-              "column": 7
+              "line": 339,
+              "column": 9
             },
             {
               "title": "should display the correct text",
@@ -2114,14 +2114,14 @@
                   "results": [
                     {
                       "workerIndex": 11,
-                      "parallelIndex": 3,
+                      "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 3221,
+                      "duration": 4418,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-12T12:20:01.950Z",
+                      "startTime": "2025-07-13T05:22:35.552Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2131,8 +2131,8 @@
               ],
               "id": "0a034f6fd6168a682854-8d77d7b617ccba465b3d",
               "file": "tests-examples/demo-todo-app.spec.ts",
-              "line": 285,
-              "column": 7
+              "line": 324,
+              "column": 9
             },
             {
               "title": "should remove completed items when clicked",
@@ -2148,14 +2148,14 @@
                   "results": [
                     {
                       "workerIndex": 10,
-                      "parallelIndex": 0,
+                      "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 3823,
+                      "duration": 4728,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-12T12:20:02.323Z",
+                      "startTime": "2025-07-13T05:22:35.865Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2165,8 +2165,8 @@
               ],
               "id": "0a034f6fd6168a682854-7dbad787b67876f26386",
               "file": "tests-examples/demo-todo-app.spec.ts",
-              "line": 290,
-              "column": 7
+              "line": 331,
+              "column": 9
             },
             {
               "title": "should be hidden when there are no items that are completed",
@@ -2182,14 +2182,14 @@
                   "results": [
                     {
                       "workerIndex": 9,
-                      "parallelIndex": 1,
+                      "parallelIndex": 3,
                       "status": "passed",
-                      "duration": 4366,
+                      "duration": 4370,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-12T12:20:03.259Z",
+                      "startTime": "2025-07-13T05:22:36.120Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2199,15 +2199,15 @@
               ],
               "id": "0a034f6fd6168a682854-2813737b58140123d513",
               "file": "tests-examples/demo-todo-app.spec.ts",
-              "line": 298,
-              "column": 7
+              "line": 339,
+              "column": 9
             }
           ]
         },
         {
           "title": "Persistence",
           "file": "tests-examples/demo-todo-app.spec.ts",
-          "line": 305,
+          "line": 350,
           "column": 6,
           "specs": [
             {
@@ -2226,12 +2226,12 @@
                       "workerIndex": 3,
                       "parallelIndex": 3,
                       "status": "passed",
-                      "duration": 1172,
+                      "duration": 824,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-12T12:18:58.952Z",
+                      "startTime": "2025-07-13T05:21:52.940Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2241,8 +2241,8 @@
               ],
               "id": "0a034f6fd6168a682854-6f700169ff1c6277327e",
               "file": "tests-examples/demo-todo-app.spec.ts",
-              "line": 306,
-              "column": 7
+              "line": 351,
+              "column": 9
             },
             {
               "title": "should persist its data",
@@ -2257,15 +2257,15 @@
                   "projectName": "firefox",
                   "results": [
                     {
-                      "workerIndex": 6,
-                      "parallelIndex": 3,
+                      "workerIndex": 4,
+                      "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 5258,
+                      "duration": 2376,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-12T12:19:30.509Z",
+                      "startTime": "2025-07-13T05:22:15.033Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2275,8 +2275,8 @@
               ],
               "id": "0a034f6fd6168a682854-f23ee85e3da1acd975c0",
               "file": "tests-examples/demo-todo-app.spec.ts",
-              "line": 306,
-              "column": 7
+              "line": 351,
+              "column": 9
             },
             {
               "title": "should persist its data",
@@ -2291,15 +2291,15 @@
                   "projectName": "webkit",
                   "results": [
                     {
-                      "workerIndex": 8,
-                      "parallelIndex": 2,
+                      "workerIndex": 13,
+                      "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 3303,
+                      "duration": 3238,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-12T12:20:03.703Z",
+                      "startTime": "2025-07-13T05:22:38.759Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2309,15 +2309,15 @@
               ],
               "id": "0a034f6fd6168a682854-3d8653f55bba9fb716d5",
               "file": "tests-examples/demo-todo-app.spec.ts",
-              "line": 306,
-              "column": 7
+              "line": 351,
+              "column": 9
             }
           ]
         },
         {
           "title": "Routing",
           "file": "tests-examples/demo-todo-app.spec.ts",
-          "line": 333,
+          "line": 378,
           "column": 6,
           "specs": [
             {
@@ -2333,15 +2333,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 2,
-                      "parallelIndex": 2,
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 1074,
+                      "duration": 886,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-12T12:18:59.296Z",
+                      "startTime": "2025-07-13T05:21:52.972Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2351,8 +2351,8 @@
               ],
               "id": "0a034f6fd6168a682854-eb348c8532b7ac11d77a",
               "file": "tests-examples/demo-todo-app.spec.ts",
-              "line": 342,
-              "column": 7
+              "line": 387,
+              "column": 9
             },
             {
               "title": "should respect the back button",
@@ -2370,7 +2370,7 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 1287,
+                      "duration": 973,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
@@ -2378,18 +2378,18 @@
                       "steps": [
                         {
                           "title": "Showing all items",
-                          "duration": 141
+                          "duration": 61
                         },
                         {
                           "title": "Showing active items",
-                          "duration": 75
+                          "duration": 67
                         },
                         {
                           "title": "Showing completed items",
-                          "duration": 62
+                          "duration": 74
                         }
                       ],
-                      "startTime": "2025-07-12T12:18:59.435Z",
+                      "startTime": "2025-07-13T05:21:53.402Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2399,8 +2399,8 @@
               ],
               "id": "0a034f6fd6168a682854-031317cf20c04e40e398",
               "file": "tests-examples/demo-todo-app.spec.ts",
-              "line": 352,
-              "column": 7
+              "line": 401,
+              "column": 9
             },
             {
               "title": "should allow me to display completed items",
@@ -2415,15 +2415,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 1,
-                      "parallelIndex": 1,
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 1229,
+                      "duration": 831,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-12T12:18:59.975Z",
+                      "startTime": "2025-07-13T05:21:53.745Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2433,12 +2433,12 @@
               ],
               "id": "0a034f6fd6168a682854-74268a074fd954f58c07",
               "file": "tests-examples/demo-todo-app.spec.ts",
-              "line": 378,
-              "column": 7
+              "line": 431,
+              "column": 9
             },
             {
               "title": "should allow me to display all items",
-              "ok": true,
+              "ok": false,
               "tags": [],
               "tests": [
                 {
@@ -2451,24 +2451,102 @@
                     {
                       "workerIndex": 3,
                       "parallelIndex": 3,
-                      "status": "passed",
-                      "duration": 1347,
-                      "errors": [],
+                      "status": "failed",
+                      "duration": 5999,
+                      "error": {
+                        "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nLocator: getByTestId('todo-item')\nExpected: \u001b[32m4\u001b[39m\nReceived: \u001b[31m3\u001b[39m\nCall log:\n\u001b[2m  - Expect \"toHaveCount\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('todo-item')\u001b[22m\n\u001b[2m    - locator resolved to 1 element\u001b[22m\n\u001b[2m    - unexpected value \"1\"\u001b[22m\n\u001b[2m    8 × locator resolved to 3 elements\u001b[22m\n\u001b[2m      - unexpected value \"3\"\u001b[22m\n",
+                        "stack": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nLocator: getByTestId('todo-item')\nExpected: \u001b[32m4\u001b[39m\nReceived: \u001b[31m3\u001b[39m\nCall log:\n\u001b[2m  - Expect \"toHaveCount\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('todo-item')\u001b[22m\n\u001b[2m    - locator resolved to 1 element\u001b[22m\n\u001b[2m    - unexpected value \"1\"\u001b[22m\n\u001b[2m    8 × locator resolved to 3 elements\u001b[22m\n\u001b[2m      - unexpected value \"3\"\u001b[22m\n\n    at C:\\Projects\\bbd playwright\\tests\\tests-examples\\demo-todo-app.spec.ts:452:53",
+                        "location": {
+                          "file": "C:\\Projects\\bbd playwright\\tests\\tests-examples\\demo-todo-app.spec.ts",
+                          "column": 53,
+                          "line": 452
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 450 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByRole(\u001b[32m\"link\"\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m\"Completed\"\u001b[39m })\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 451 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByRole(\u001b[32m\"link\"\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m\"All\"\u001b[39m })\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 452 |\u001b[39m         \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByTestId(\u001b[32m\"todo-item\"\u001b[39m))\u001b[33m.\u001b[39mtoHaveCount(\u001b[35m4\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 453 |\u001b[39m     })\u001b[33m;\u001b[39m\n \u001b[90m 454 |\u001b[39m\n \u001b[90m 455 |\u001b[39m     test\u001b[33m.\u001b[39mskip(\u001b[32m\"should highlight the currently applied filter\"\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Projects\\bbd playwright\\tests\\tests-examples\\demo-todo-app.spec.ts",
+                            "column": 53,
+                            "line": 452
+                          },
+                          "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nLocator: getByTestId('todo-item')\nExpected: \u001b[32m4\u001b[39m\nReceived: \u001b[31m3\u001b[39m\nCall log:\n\u001b[2m  - Expect \"toHaveCount\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('todo-item')\u001b[22m\n\u001b[2m    - locator resolved to 1 element\u001b[22m\n\u001b[2m    - unexpected value \"1\"\u001b[22m\n\u001b[2m    8 × locator resolved to 3 elements\u001b[22m\n\u001b[2m      - unexpected value \"3\"\u001b[22m\n\n\n\u001b[0m \u001b[90m 450 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByRole(\u001b[32m\"link\"\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m\"Completed\"\u001b[39m })\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 451 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByRole(\u001b[32m\"link\"\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m\"All\"\u001b[39m })\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 452 |\u001b[39m         \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByTestId(\u001b[32m\"todo-item\"\u001b[39m))\u001b[33m.\u001b[39mtoHaveCount(\u001b[35m4\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 453 |\u001b[39m     })\u001b[33m;\u001b[39m\n \u001b[90m 454 |\u001b[39m\n \u001b[90m 455 |\u001b[39m     test\u001b[33m.\u001b[39mskip(\u001b[32m\"should highlight the currently applied filter\"\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({\u001b[0m\n\u001b[2m    at C:\\Projects\\bbd playwright\\tests\\tests-examples\\demo-todo-app.spec.ts:452:53\u001b[22m"
+                        }
+                      ],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-12T12:19:00.142Z",
+                      "startTime": "2025-07-13T05:21:53.774Z",
                       "annotations": [],
-                      "attachments": []
+                      "attachments": [
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Projects\\bbd playwright\\test-results\\tests-examples-demo-todo-a-4b396-low-me-to-display-all-items-chromium\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Projects\\bbd playwright\\tests\\tests-examples\\demo-todo-app.spec.ts",
+                        "column": 53,
+                        "line": 452
+                      }
+                    },
+                    {
+                      "workerIndex": 7,
+                      "parallelIndex": 3,
+                      "status": "failed",
+                      "duration": 7879,
+                      "error": {
+                        "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nLocator: getByTestId('todo-item')\nExpected: \u001b[32m4\u001b[39m\nReceived: \u001b[31m3\u001b[39m\nCall log:\n\u001b[2m  - Expect \"toHaveCount\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('todo-item')\u001b[22m\n\u001b[2m    9 × locator resolved to 3 elements\u001b[22m\n\u001b[2m      - unexpected value \"3\"\u001b[22m\n",
+                        "stack": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nLocator: getByTestId('todo-item')\nExpected: \u001b[32m4\u001b[39m\nReceived: \u001b[31m3\u001b[39m\nCall log:\n\u001b[2m  - Expect \"toHaveCount\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('todo-item')\u001b[22m\n\u001b[2m    9 × locator resolved to 3 elements\u001b[22m\n\u001b[2m      - unexpected value \"3\"\u001b[22m\n\n    at C:\\Projects\\bbd playwright\\tests\\tests-examples\\demo-todo-app.spec.ts:452:53",
+                        "location": {
+                          "file": "C:\\Projects\\bbd playwright\\tests\\tests-examples\\demo-todo-app.spec.ts",
+                          "column": 53,
+                          "line": 452
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 450 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByRole(\u001b[32m\"link\"\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m\"Completed\"\u001b[39m })\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 451 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByRole(\u001b[32m\"link\"\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m\"All\"\u001b[39m })\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 452 |\u001b[39m         \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByTestId(\u001b[32m\"todo-item\"\u001b[39m))\u001b[33m.\u001b[39mtoHaveCount(\u001b[35m4\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 453 |\u001b[39m     })\u001b[33m;\u001b[39m\n \u001b[90m 454 |\u001b[39m\n \u001b[90m 455 |\u001b[39m     test\u001b[33m.\u001b[39mskip(\u001b[32m\"should highlight the currently applied filter\"\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Projects\\bbd playwright\\tests\\tests-examples\\demo-todo-app.spec.ts",
+                            "column": 53,
+                            "line": 452
+                          },
+                          "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nLocator: getByTestId('todo-item')\nExpected: \u001b[32m4\u001b[39m\nReceived: \u001b[31m3\u001b[39m\nCall log:\n\u001b[2m  - Expect \"toHaveCount\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('todo-item')\u001b[22m\n\u001b[2m    9 × locator resolved to 3 elements\u001b[22m\n\u001b[2m      - unexpected value \"3\"\u001b[22m\n\n\n\u001b[0m \u001b[90m 450 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByRole(\u001b[32m\"link\"\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m\"Completed\"\u001b[39m })\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 451 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByRole(\u001b[32m\"link\"\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m\"All\"\u001b[39m })\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 452 |\u001b[39m         \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByTestId(\u001b[32m\"todo-item\"\u001b[39m))\u001b[33m.\u001b[39mtoHaveCount(\u001b[35m4\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 453 |\u001b[39m     })\u001b[33m;\u001b[39m\n \u001b[90m 454 |\u001b[39m\n \u001b[90m 455 |\u001b[39m     test\u001b[33m.\u001b[39mskip(\u001b[32m\"should highlight the currently applied filter\"\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({\u001b[0m\n\u001b[2m    at C:\\Projects\\bbd playwright\\tests\\tests-examples\\demo-todo-app.spec.ts:452:53\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 1,
+                      "startTime": "2025-07-13T05:22:02.237Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Projects\\bbd playwright\\test-results\\tests-examples-demo-todo-a-4b396-low-me-to-display-all-items-chromium-retry1\\error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Projects\\bbd playwright\\test-results\\tests-examples-demo-todo-a-4b396-low-me-to-display-all-items-chromium-retry1\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Projects\\bbd playwright\\tests\\tests-examples\\demo-todo-app.spec.ts",
+                        "column": 53,
+                        "line": 452
+                      }
                     }
                   ],
-                  "status": "expected"
+                  "status": "unexpected"
                 }
               ],
               "id": "0a034f6fd6168a682854-af67ee04cc3d1aa74b4d",
               "file": "tests-examples/demo-todo-app.spec.ts",
-              "line": 385,
-              "column": 7
+              "line": 442,
+              "column": 9
             },
             {
               "title": "should highlight the currently applied filter",
@@ -2477,32 +2555,41 @@
               "tests": [
                 {
                   "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "location": {
+                        "file": "C:\\Projects\\bbd playwright\\tests\\tests-examples\\demo-todo-app.spec.ts",
+                        "line": 455,
+                        "column": 10
+                      }
+                    }
+                  ],
+                  "expectedStatus": "skipped",
                   "projectId": "chromium",
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 2,
-                      "parallelIndex": 2,
-                      "status": "passed",
-                      "duration": 1244,
+                      "workerIndex": -1,
+                      "parallelIndex": -1,
+                      "status": "skipped",
+                      "duration": 0,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-12T12:19:00.386Z",
+                      "startTime": "2025-07-13T05:21:53.883Z",
                       "annotations": [],
                       "attachments": []
                     }
                   ],
-                  "status": "expected"
+                  "status": "skipped"
                 }
               ],
               "id": "0a034f6fd6168a682854-11414989435c54581feb",
               "file": "tests-examples/demo-todo-app.spec.ts",
-              "line": 394,
-              "column": 7
+              "line": 455,
+              "column": 10
             },
             {
               "title": "should allow me to display active items",
@@ -2517,15 +2604,15 @@
                   "projectName": "firefox",
                   "results": [
                     {
-                      "workerIndex": 7,
-                      "parallelIndex": 0,
+                      "workerIndex": 5,
+                      "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 2527,
+                      "duration": 1665,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-12T12:19:30.650Z",
+                      "startTime": "2025-07-13T05:22:15.191Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2535,8 +2622,8 @@
               ],
               "id": "0a034f6fd6168a682854-0caeaf2cef75ca70ff88",
               "file": "tests-examples/demo-todo-app.spec.ts",
-              "line": 342,
-              "column": 7
+              "line": 387,
+              "column": 9
             },
             {
               "title": "should respect the back button",
@@ -2551,10 +2638,10 @@
                   "projectName": "firefox",
                   "results": [
                     {
-                      "workerIndex": 4,
+                      "workerIndex": 6,
                       "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 4845,
+                      "duration": 2126,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
@@ -2562,18 +2649,18 @@
                       "steps": [
                         {
                           "title": "Showing all items",
-                          "duration": 238
+                          "duration": 160
                         },
                         {
                           "title": "Showing active items",
-                          "duration": 132
+                          "duration": 136
                         },
                         {
                           "title": "Showing completed items",
-                          "duration": 121
+                          "duration": 101
                         }
                       ],
-                      "startTime": "2025-07-12T12:19:32.547Z",
+                      "startTime": "2025-07-13T05:22:15.460Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2583,8 +2670,8 @@
               ],
               "id": "0a034f6fd6168a682854-ad6fc53a2b983dfbc73c",
               "file": "tests-examples/demo-todo-app.spec.ts",
-              "line": 352,
-              "column": 7
+              "line": 401,
+              "column": 9
             },
             {
               "title": "should allow me to display completed items",
@@ -2602,12 +2689,12 @@
                       "workerIndex": 5,
                       "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 3814,
+                      "duration": 2107,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-12T12:19:32.797Z",
+                      "startTime": "2025-07-13T05:22:16.880Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2617,12 +2704,12 @@
               ],
               "id": "0a034f6fd6168a682854-d895cc7b849072dcb5a2",
               "file": "tests-examples/demo-todo-app.spec.ts",
-              "line": 378,
-              "column": 7
+              "line": 431,
+              "column": 9
             },
             {
               "title": "should allow me to display all items",
-              "ok": true,
+              "ok": false,
               "tags": [],
               "tests": [
                 {
@@ -2633,26 +2720,104 @@
                   "projectName": "firefox",
                   "results": [
                     {
-                      "workerIndex": 7,
+                      "workerIndex": 4,
                       "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 4532,
-                      "errors": [],
+                      "status": "failed",
+                      "duration": 7001,
+                      "error": {
+                        "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nLocator: getByTestId('todo-item')\nExpected: \u001b[32m4\u001b[39m\nReceived: \u001b[31m3\u001b[39m\nCall log:\n\u001b[2m  - Expect \"toHaveCount\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('todo-item')\u001b[22m\n\u001b[2m    9 × locator resolved to 3 elements\u001b[22m\n\u001b[2m      - unexpected value \"3\"\u001b[22m\n",
+                        "stack": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nLocator: getByTestId('todo-item')\nExpected: \u001b[32m4\u001b[39m\nReceived: \u001b[31m3\u001b[39m\nCall log:\n\u001b[2m  - Expect \"toHaveCount\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('todo-item')\u001b[22m\n\u001b[2m    9 × locator resolved to 3 elements\u001b[22m\n\u001b[2m      - unexpected value \"3\"\u001b[22m\n\n    at C:\\Projects\\bbd playwright\\tests\\tests-examples\\demo-todo-app.spec.ts:452:53",
+                        "location": {
+                          "file": "C:\\Projects\\bbd playwright\\tests\\tests-examples\\demo-todo-app.spec.ts",
+                          "column": 53,
+                          "line": 452
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 450 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByRole(\u001b[32m\"link\"\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m\"Completed\"\u001b[39m })\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 451 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByRole(\u001b[32m\"link\"\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m\"All\"\u001b[39m })\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 452 |\u001b[39m         \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByTestId(\u001b[32m\"todo-item\"\u001b[39m))\u001b[33m.\u001b[39mtoHaveCount(\u001b[35m4\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 453 |\u001b[39m     })\u001b[33m;\u001b[39m\n \u001b[90m 454 |\u001b[39m\n \u001b[90m 455 |\u001b[39m     test\u001b[33m.\u001b[39mskip(\u001b[32m\"should highlight the currently applied filter\"\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Projects\\bbd playwright\\tests\\tests-examples\\demo-todo-app.spec.ts",
+                            "column": 53,
+                            "line": 452
+                          },
+                          "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nLocator: getByTestId('todo-item')\nExpected: \u001b[32m4\u001b[39m\nReceived: \u001b[31m3\u001b[39m\nCall log:\n\u001b[2m  - Expect \"toHaveCount\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('todo-item')\u001b[22m\n\u001b[2m    9 × locator resolved to 3 elements\u001b[22m\n\u001b[2m      - unexpected value \"3\"\u001b[22m\n\n\n\u001b[0m \u001b[90m 450 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByRole(\u001b[32m\"link\"\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m\"Completed\"\u001b[39m })\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 451 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByRole(\u001b[32m\"link\"\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m\"All\"\u001b[39m })\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 452 |\u001b[39m         \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByTestId(\u001b[32m\"todo-item\"\u001b[39m))\u001b[33m.\u001b[39mtoHaveCount(\u001b[35m4\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 453 |\u001b[39m     })\u001b[33m;\u001b[39m\n \u001b[90m 454 |\u001b[39m\n \u001b[90m 455 |\u001b[39m     test\u001b[33m.\u001b[39mskip(\u001b[32m\"should highlight the currently applied filter\"\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({\u001b[0m\n\u001b[2m    at C:\\Projects\\bbd playwright\\tests\\tests-examples\\demo-todo-app.spec.ts:452:53\u001b[22m"
+                        }
+                      ],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-12T12:19:33.208Z",
+                      "startTime": "2025-07-13T05:22:17.437Z",
                       "annotations": [],
-                      "attachments": []
+                      "attachments": [
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Projects\\bbd playwright\\test-results\\tests-examples-demo-todo-a-4b396-low-me-to-display-all-items-firefox\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Projects\\bbd playwright\\tests\\tests-examples\\demo-todo-app.spec.ts",
+                        "column": 53,
+                        "line": 452
+                      }
+                    },
+                    {
+                      "workerIndex": 12,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 9437,
+                      "error": {
+                        "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nLocator: getByTestId('todo-item')\nExpected: \u001b[32m4\u001b[39m\nReceived: \u001b[31m3\u001b[39m\nCall log:\n\u001b[2m  - Expect \"toHaveCount\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('todo-item')\u001b[22m\n\u001b[2m    9 × locator resolved to 3 elements\u001b[22m\n\u001b[2m      - unexpected value \"3\"\u001b[22m\n",
+                        "stack": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nLocator: getByTestId('todo-item')\nExpected: \u001b[32m4\u001b[39m\nReceived: \u001b[31m3\u001b[39m\nCall log:\n\u001b[2m  - Expect \"toHaveCount\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('todo-item')\u001b[22m\n\u001b[2m    9 × locator resolved to 3 elements\u001b[22m\n\u001b[2m      - unexpected value \"3\"\u001b[22m\n\n    at C:\\Projects\\bbd playwright\\tests\\tests-examples\\demo-todo-app.spec.ts:452:53",
+                        "location": {
+                          "file": "C:\\Projects\\bbd playwright\\tests\\tests-examples\\demo-todo-app.spec.ts",
+                          "column": 53,
+                          "line": 452
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 450 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByRole(\u001b[32m\"link\"\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m\"Completed\"\u001b[39m })\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 451 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByRole(\u001b[32m\"link\"\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m\"All\"\u001b[39m })\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 452 |\u001b[39m         \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByTestId(\u001b[32m\"todo-item\"\u001b[39m))\u001b[33m.\u001b[39mtoHaveCount(\u001b[35m4\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 453 |\u001b[39m     })\u001b[33m;\u001b[39m\n \u001b[90m 454 |\u001b[39m\n \u001b[90m 455 |\u001b[39m     test\u001b[33m.\u001b[39mskip(\u001b[32m\"should highlight the currently applied filter\"\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Projects\\bbd playwright\\tests\\tests-examples\\demo-todo-app.spec.ts",
+                            "column": 53,
+                            "line": 452
+                          },
+                          "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nLocator: getByTestId('todo-item')\nExpected: \u001b[32m4\u001b[39m\nReceived: \u001b[31m3\u001b[39m\nCall log:\n\u001b[2m  - Expect \"toHaveCount\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('todo-item')\u001b[22m\n\u001b[2m    9 × locator resolved to 3 elements\u001b[22m\n\u001b[2m      - unexpected value \"3\"\u001b[22m\n\n\n\u001b[0m \u001b[90m 450 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByRole(\u001b[32m\"link\"\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m\"Completed\"\u001b[39m })\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 451 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByRole(\u001b[32m\"link\"\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m\"All\"\u001b[39m })\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 452 |\u001b[39m         \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByTestId(\u001b[32m\"todo-item\"\u001b[39m))\u001b[33m.\u001b[39mtoHaveCount(\u001b[35m4\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 453 |\u001b[39m     })\u001b[33m;\u001b[39m\n \u001b[90m 454 |\u001b[39m\n \u001b[90m 455 |\u001b[39m     test\u001b[33m.\u001b[39mskip(\u001b[32m\"should highlight the currently applied filter\"\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({\u001b[0m\n\u001b[2m    at C:\\Projects\\bbd playwright\\tests\\tests-examples\\demo-todo-app.spec.ts:452:53\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 1,
+                      "startTime": "2025-07-13T05:22:26.526Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Projects\\bbd playwright\\test-results\\tests-examples-demo-todo-a-4b396-low-me-to-display-all-items-firefox-retry1\\error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Projects\\bbd playwright\\test-results\\tests-examples-demo-todo-a-4b396-low-me-to-display-all-items-firefox-retry1\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Projects\\bbd playwright\\tests\\tests-examples\\demo-todo-app.spec.ts",
+                        "column": 53,
+                        "line": 452
+                      }
                     }
                   ],
-                  "status": "expected"
+                  "status": "unexpected"
                 }
               ],
               "id": "0a034f6fd6168a682854-8fc171ae7772398db450",
               "file": "tests-examples/demo-todo-app.spec.ts",
-              "line": 385,
-              "column": 7
+              "line": 442,
+              "column": 9
             },
             {
               "title": "should highlight the currently applied filter",
@@ -2661,32 +2826,41 @@
               "tests": [
                 {
                   "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "location": {
+                        "file": "C:\\Projects\\bbd playwright\\tests\\tests-examples\\demo-todo-app.spec.ts",
+                        "line": 455,
+                        "column": 10
+                      }
+                    }
+                  ],
+                  "expectedStatus": "skipped",
                   "projectId": "firefox",
                   "projectName": "firefox",
                   "results": [
                     {
-                      "workerIndex": 6,
-                      "parallelIndex": 3,
-                      "status": "passed",
-                      "duration": 2280,
+                      "workerIndex": -1,
+                      "parallelIndex": -1,
+                      "status": "skipped",
+                      "duration": 0,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-12T12:19:35.804Z",
+                      "startTime": "2025-07-13T05:22:17.605Z",
                       "annotations": [],
                       "attachments": []
                     }
                   ],
-                  "status": "expected"
+                  "status": "skipped"
                 }
               ],
               "id": "0a034f6fd6168a682854-bab49e329cd25615d126",
               "file": "tests-examples/demo-todo-app.spec.ts",
-              "line": 394,
-              "column": 7
+              "line": 455,
+              "column": 10
             },
             {
               "title": "should allow me to display active items",
@@ -2702,14 +2876,14 @@
                   "results": [
                     {
                       "workerIndex": 11,
-                      "parallelIndex": 3,
+                      "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 4296,
+                      "duration": 3448,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-12T12:20:05.185Z",
+                      "startTime": "2025-07-13T05:22:39.979Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2719,8 +2893,8 @@
               ],
               "id": "0a034f6fd6168a682854-00ec55c8f98ed46406c4",
               "file": "tests-examples/demo-todo-app.spec.ts",
-              "line": 342,
-              "column": 7
+              "line": 387,
+              "column": 9
             },
             {
               "title": "should respect the back button",
@@ -2735,10 +2909,10 @@
                   "projectName": "webkit",
                   "results": [
                     {
-                      "workerIndex": 10,
-                      "parallelIndex": 0,
+                      "workerIndex": 9,
+                      "parallelIndex": 3,
                       "status": "passed",
-                      "duration": 5558,
+                      "duration": 5262,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
@@ -2746,18 +2920,18 @@
                       "steps": [
                         {
                           "title": "Showing all items",
-                          "duration": 932
+                          "duration": 781
                         },
                         {
                           "title": "Showing active items",
-                          "duration": 689
+                          "duration": 195
                         },
                         {
                           "title": "Showing completed items",
-                          "duration": 229
+                          "duration": 304
                         }
                       ],
-                      "startTime": "2025-07-12T12:20:06.162Z",
+                      "startTime": "2025-07-13T05:22:40.497Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2767,8 +2941,8 @@
               ],
               "id": "0a034f6fd6168a682854-a4c644d2b483e766f41e",
               "file": "tests-examples/demo-todo-app.spec.ts",
-              "line": 352,
-              "column": 7
+              "line": 401,
+              "column": 9
             },
             {
               "title": "should allow me to display completed items",
@@ -2783,15 +2957,15 @@
                   "projectName": "webkit",
                   "results": [
                     {
-                      "workerIndex": 8,
-                      "parallelIndex": 2,
+                      "workerIndex": 10,
+                      "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 3870,
+                      "duration": 4420,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-12T12:20:07.022Z",
+                      "startTime": "2025-07-13T05:22:40.601Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2801,12 +2975,12 @@
               ],
               "id": "0a034f6fd6168a682854-c59be5bf98b122437c8a",
               "file": "tests-examples/demo-todo-app.spec.ts",
-              "line": 378,
-              "column": 7
+              "line": 431,
+              "column": 9
             },
             {
               "title": "should allow me to display all items",
-              "ok": true,
+              "ok": false,
               "tags": [],
               "tests": [
                 {
@@ -2817,26 +2991,104 @@
                   "projectName": "webkit",
                   "results": [
                     {
-                      "workerIndex": 9,
-                      "parallelIndex": 1,
-                      "status": "passed",
-                      "duration": 4826,
-                      "errors": [],
+                      "workerIndex": 13,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 10553,
+                      "error": {
+                        "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nLocator: getByTestId('todo-item')\nExpected: \u001b[32m4\u001b[39m\nReceived: \u001b[31m3\u001b[39m\nCall log:\n\u001b[2m  - Expect \"toHaveCount\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('todo-item')\u001b[22m\n\u001b[2m    8 × locator resolved to 3 elements\u001b[22m\n\u001b[2m      - unexpected value \"3\"\u001b[22m\n",
+                        "stack": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nLocator: getByTestId('todo-item')\nExpected: \u001b[32m4\u001b[39m\nReceived: \u001b[31m3\u001b[39m\nCall log:\n\u001b[2m  - Expect \"toHaveCount\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('todo-item')\u001b[22m\n\u001b[2m    8 × locator resolved to 3 elements\u001b[22m\n\u001b[2m      - unexpected value \"3\"\u001b[22m\n\n    at C:\\Projects\\bbd playwright\\tests\\tests-examples\\demo-todo-app.spec.ts:452:53",
+                        "location": {
+                          "file": "C:\\Projects\\bbd playwright\\tests\\tests-examples\\demo-todo-app.spec.ts",
+                          "column": 53,
+                          "line": 452
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 450 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByRole(\u001b[32m\"link\"\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m\"Completed\"\u001b[39m })\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 451 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByRole(\u001b[32m\"link\"\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m\"All\"\u001b[39m })\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 452 |\u001b[39m         \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByTestId(\u001b[32m\"todo-item\"\u001b[39m))\u001b[33m.\u001b[39mtoHaveCount(\u001b[35m4\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 453 |\u001b[39m     })\u001b[33m;\u001b[39m\n \u001b[90m 454 |\u001b[39m\n \u001b[90m 455 |\u001b[39m     test\u001b[33m.\u001b[39mskip(\u001b[32m\"should highlight the currently applied filter\"\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Projects\\bbd playwright\\tests\\tests-examples\\demo-todo-app.spec.ts",
+                            "column": 53,
+                            "line": 452
+                          },
+                          "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nLocator: getByTestId('todo-item')\nExpected: \u001b[32m4\u001b[39m\nReceived: \u001b[31m3\u001b[39m\nCall log:\n\u001b[2m  - Expect \"toHaveCount\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('todo-item')\u001b[22m\n\u001b[2m    8 × locator resolved to 3 elements\u001b[22m\n\u001b[2m      - unexpected value \"3\"\u001b[22m\n\n\n\u001b[0m \u001b[90m 450 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByRole(\u001b[32m\"link\"\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m\"Completed\"\u001b[39m })\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 451 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByRole(\u001b[32m\"link\"\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m\"All\"\u001b[39m })\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 452 |\u001b[39m         \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByTestId(\u001b[32m\"todo-item\"\u001b[39m))\u001b[33m.\u001b[39mtoHaveCount(\u001b[35m4\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 453 |\u001b[39m     })\u001b[33m;\u001b[39m\n \u001b[90m 454 |\u001b[39m\n \u001b[90m 455 |\u001b[39m     test\u001b[33m.\u001b[39mskip(\u001b[32m\"should highlight the currently applied filter\"\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({\u001b[0m\n\u001b[2m    at C:\\Projects\\bbd playwright\\tests\\tests-examples\\demo-todo-app.spec.ts:452:53\u001b[22m"
+                        }
+                      ],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-12T12:20:07.640Z",
+                      "startTime": "2025-07-13T05:22:42.088Z",
                       "annotations": [],
-                      "attachments": []
+                      "attachments": [
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Projects\\bbd playwright\\test-results\\tests-examples-demo-todo-a-4b396-low-me-to-display-all-items-webkit\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Projects\\bbd playwright\\tests\\tests-examples\\demo-todo-app.spec.ts",
+                        "column": 53,
+                        "line": 452
+                      }
+                    },
+                    {
+                      "workerIndex": 10,
+                      "parallelIndex": 1,
+                      "status": "failed",
+                      "duration": 8416,
+                      "error": {
+                        "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nLocator: getByTestId('todo-item')\nExpected: \u001b[32m4\u001b[39m\nReceived: \u001b[31m3\u001b[39m\nCall log:\n\u001b[2m  - Expect \"toHaveCount\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('todo-item')\u001b[22m\n\u001b[2m    8 × locator resolved to 3 elements\u001b[22m\n\u001b[2m      - unexpected value \"3\"\u001b[22m\n",
+                        "stack": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nLocator: getByTestId('todo-item')\nExpected: \u001b[32m4\u001b[39m\nReceived: \u001b[31m3\u001b[39m\nCall log:\n\u001b[2m  - Expect \"toHaveCount\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('todo-item')\u001b[22m\n\u001b[2m    8 × locator resolved to 3 elements\u001b[22m\n\u001b[2m      - unexpected value \"3\"\u001b[22m\n\n    at C:\\Projects\\bbd playwright\\tests\\tests-examples\\demo-todo-app.spec.ts:452:53",
+                        "location": {
+                          "file": "C:\\Projects\\bbd playwright\\tests\\tests-examples\\demo-todo-app.spec.ts",
+                          "column": 53,
+                          "line": 452
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 450 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByRole(\u001b[32m\"link\"\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m\"Completed\"\u001b[39m })\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 451 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByRole(\u001b[32m\"link\"\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m\"All\"\u001b[39m })\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 452 |\u001b[39m         \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByTestId(\u001b[32m\"todo-item\"\u001b[39m))\u001b[33m.\u001b[39mtoHaveCount(\u001b[35m4\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 453 |\u001b[39m     })\u001b[33m;\u001b[39m\n \u001b[90m 454 |\u001b[39m\n \u001b[90m 455 |\u001b[39m     test\u001b[33m.\u001b[39mskip(\u001b[32m\"should highlight the currently applied filter\"\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Projects\\bbd playwright\\tests\\tests-examples\\demo-todo-app.spec.ts",
+                            "column": 53,
+                            "line": 452
+                          },
+                          "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nLocator: getByTestId('todo-item')\nExpected: \u001b[32m4\u001b[39m\nReceived: \u001b[31m3\u001b[39m\nCall log:\n\u001b[2m  - Expect \"toHaveCount\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('todo-item')\u001b[22m\n\u001b[2m    8 × locator resolved to 3 elements\u001b[22m\n\u001b[2m      - unexpected value \"3\"\u001b[22m\n\n\n\u001b[0m \u001b[90m 450 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByRole(\u001b[32m\"link\"\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m\"Completed\"\u001b[39m })\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 451 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByRole(\u001b[32m\"link\"\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m\"All\"\u001b[39m })\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 452 |\u001b[39m         \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByTestId(\u001b[32m\"todo-item\"\u001b[39m))\u001b[33m.\u001b[39mtoHaveCount(\u001b[35m4\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 453 |\u001b[39m     })\u001b[33m;\u001b[39m\n \u001b[90m 454 |\u001b[39m\n \u001b[90m 455 |\u001b[39m     test\u001b[33m.\u001b[39mskip(\u001b[32m\"should highlight the currently applied filter\"\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({\u001b[0m\n\u001b[2m    at C:\\Projects\\bbd playwright\\tests\\tests-examples\\demo-todo-app.spec.ts:452:53\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 1,
+                      "startTime": "2025-07-13T05:22:52.686Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Projects\\bbd playwright\\test-results\\tests-examples-demo-todo-a-4b396-low-me-to-display-all-items-webkit-retry1\\error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Projects\\bbd playwright\\test-results\\tests-examples-demo-todo-a-4b396-low-me-to-display-all-items-webkit-retry1\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Projects\\bbd playwright\\tests\\tests-examples\\demo-todo-app.spec.ts",
+                        "column": 53,
+                        "line": 452
+                      }
                     }
                   ],
-                  "status": "expected"
+                  "status": "unexpected"
                 }
               ],
               "id": "0a034f6fd6168a682854-b279b35a584dd244a46f",
               "file": "tests-examples/demo-todo-app.spec.ts",
-              "line": 385,
-              "column": 7
+              "line": 442,
+              "column": 9
             },
             {
               "title": "should highlight the currently applied filter",
@@ -2845,32 +3097,41 @@
               "tests": [
                 {
                   "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "location": {
+                        "file": "C:\\Projects\\bbd playwright\\tests\\tests-examples\\demo-todo-app.spec.ts",
+                        "line": 455,
+                        "column": 10
+                      }
+                    }
+                  ],
+                  "expectedStatus": "skipped",
                   "projectId": "webkit",
                   "projectName": "webkit",
                   "results": [
                     {
-                      "workerIndex": 11,
-                      "parallelIndex": 3,
-                      "status": "passed",
-                      "duration": 3529,
+                      "workerIndex": -1,
+                      "parallelIndex": -1,
+                      "status": "skipped",
+                      "duration": 0,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-12T12:20:09.502Z",
+                      "startTime": "2025-07-13T05:22:43.434Z",
                       "annotations": [],
                       "attachments": []
                     }
                   ],
-                  "status": "expected"
+                  "status": "skipped"
                 }
               ],
               "id": "0a034f6fd6168a682854-c68ce94b0314095b4c79",
               "file": "tests-examples/demo-todo-app.spec.ts",
-              "line": 394,
-              "column": 7
+              "line": 455,
+              "column": 10
             }
           ]
         }
@@ -2902,15 +3163,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 0,
-                      "parallelIndex": 0,
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 861,
+                      "duration": 676,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-12T12:19:00.746Z",
+                      "startTime": "2025-07-13T05:21:53.879Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2936,15 +3197,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 1,
-                      "parallelIndex": 1,
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 783,
+                      "duration": 486,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-12T12:19:01.234Z",
+                      "startTime": "2025-07-13T05:21:54.410Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2970,15 +3231,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 3,
-                      "parallelIndex": 3,
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 1023,
+                      "duration": 584,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-12T12:19:01.514Z",
+                      "startTime": "2025-07-13T05:21:54.565Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -3004,15 +3265,15 @@
                   "projectName": "firefox",
                   "results": [
                     {
-                      "workerIndex": 5,
-                      "parallelIndex": 1,
+                      "workerIndex": 6,
+                      "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 3116,
+                      "duration": 1378,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-12T12:19:36.639Z",
+                      "startTime": "2025-07-13T05:22:17.666Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -3038,15 +3299,15 @@
                   "projectName": "firefox",
                   "results": [
                     {
-                      "workerIndex": 4,
-                      "parallelIndex": 2,
+                      "workerIndex": 8,
+                      "parallelIndex": 3,
                       "status": "passed",
-                      "duration": 2609,
+                      "duration": 1330,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-12T12:19:37.435Z",
+                      "startTime": "2025-07-13T05:22:18.298Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -3072,15 +3333,15 @@
                   "projectName": "firefox",
                   "results": [
                     {
-                      "workerIndex": 7,
-                      "parallelIndex": 0,
+                      "workerIndex": 5,
+                      "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 2190,
+                      "duration": 1128,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-12T12:19:37.764Z",
+                      "startTime": "2025-07-13T05:22:19.032Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -3106,15 +3367,15 @@
                   "projectName": "webkit",
                   "results": [
                     {
-                      "workerIndex": 8,
+                      "workerIndex": 11,
                       "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 1865,
+                      "duration": 2944,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-12T12:20:10.914Z",
+                      "startTime": "2025-07-13T05:22:43.441Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -3141,14 +3402,14 @@
                   "results": [
                     {
                       "workerIndex": 10,
-                      "parallelIndex": 0,
+                      "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 1562,
+                      "duration": 3610,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-12T12:20:11.747Z",
+                      "startTime": "2025-07-13T05:22:45.037Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -3175,14 +3436,14 @@
                   "results": [
                     {
                       "workerIndex": 9,
-                      "parallelIndex": 1,
+                      "parallelIndex": 3,
                       "status": "passed",
-                      "duration": 2277,
+                      "duration": 3775,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-12T12:20:12.488Z",
+                      "startTime": "2025-07-13T05:22:45.776Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -3216,15 +3477,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 0,
-                      "parallelIndex": 0,
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 1140,
+                      "duration": 623,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-12T12:19:01.620Z",
+                      "startTime": "2025-07-13T05:21:54.594Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -3251,14 +3512,14 @@
                   "results": [
                     {
                       "workerIndex": 6,
-                      "parallelIndex": 3,
+                      "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 4028,
+                      "duration": 1232,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-12T12:19:38.128Z",
+                      "startTime": "2025-07-13T05:22:19.096Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -3284,15 +3545,15 @@
                   "projectName": "webkit",
                   "results": [
                     {
-                      "workerIndex": 8,
+                      "workerIndex": 11,
                       "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 3235,
+                      "duration": 3328,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-12T12:20:12.793Z",
+                      "startTime": "2025-07-13T05:22:46.394Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -3312,11 +3573,11 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-07-12T12:18:46.182Z",
-    "duration": 89956.302,
-    "expected": 90,
-    "skipped": 0,
-    "unexpected": 0,
+    "startTime": "2025-07-13T05:21:36.101Z",
+    "duration": 85153.962,
+    "expected": 84,
+    "skipped": 3,
+    "unexpected": 3,
     "flaky": 0
   }
 }

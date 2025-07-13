@@ -2,7 +2,7 @@ import React from "react";
 
 export default function TagChips({ tags, selectedTags, onToggle }) {
   return (
-    <div id="tag-chips" style={{ display: "flex", gap: ".35rem", flexWrap: "wrap" }}>
+    <div id="tag-chips" style={{ display: "flex", gap: ".35rem", flexWrap: "wrap", position: "relative" }}>
       {tags.map((tag) => (
         <span
           key={tag}
