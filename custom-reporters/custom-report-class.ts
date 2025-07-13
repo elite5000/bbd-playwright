@@ -34,11 +34,16 @@ class CustomReporter implements Reporter {
         });
     }
 
+    private startTime: number = Date.now();
+
     async onEnd() {
+        const endTime = Date.now();
         const output = {
             tests: this.results,
+            runEndDateTime: new Date(endTime).toISOString(),
+            timeTakenMs: endTime - this.startTime,
         };
-        const reportDir = path.join(process.cwd(), "playwright-report");
+        const reportDir = path.join(process.cwd(), "custom-reporters");
         fs.mkdirSync(reportDir, { recursive: true });
 
         const jsonPath = path.join(reportDir, "custom-report-data.json");

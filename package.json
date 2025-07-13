@@ -9,14 +9,19 @@
     "type": "commonjs",
     "devDependencies": {
         "@playwright/test": "^1.54.1",
-        "@types/node": "^24.0.13"
+        "@types/node": "^24.0.13",
+        "vite": "^6.3.5"
     },
     "scripts": {
+        "build": "tsc",
         "test": "npx playwright test",
         "report": "ts-node custom-reporters/copy-custom-report-assets.ts && npx playwright show-report"
     },
     "dependencies": {
+        "chart.js": "^4.5.0",
         "cheerio": "^1.1.0",
+        "react": "^19.1.0",
+        "react-dom": "^19.1.0",
         "ts-node": "^10.9.2",
         "tsc": "^2.0.4"
     }
