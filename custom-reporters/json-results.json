@@ -16,19 +16,25 @@
     "preserveOutput": "always",
     "reporter": [
       [
+        "html",
+        {
+          "open": "always"
+        }
+      ],
+      [
         "dot",
         null
       ],
       [
-        "html",
+        "junit",
         {
-          "outputFile": "test-results.html"
+          "outputFile": "junit-results.xml"
         }
       ],
       [
         "json",
         {
-          "outputFile": "test-results.json"
+          "outputFile": "json-results.json"
         }
       ],
       [
@@ -120,18 +126,61 @@
                 {
                   "workerIndex": 0,
                   "parallelIndex": 0,
-                  "status": "passed",
-                  "duration": 4052,
-                  "errors": [],
+                  "status": "failed",
+                  "duration": 5522,
+                  "error": {
+                    "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mpage\u001b[39m\u001b[2m).\u001b[22mtoHaveTitle\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected pattern: \u001b[32m/Playwright/\u001b[39m\nReceived string:  \u001b[31m\"\"\u001b[39m\nCall log:\n\u001b[2m  - Expect \"toHaveTitle\" with timeout 5000ms\u001b[22m\n\u001b[2m    8 × unexpected value \"\"\u001b[22m\n",
+                    "stack": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mpage\u001b[39m\u001b[2m).\u001b[22mtoHaveTitle\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected pattern: \u001b[32m/Playwright/\u001b[39m\nReceived string:  \u001b[31m\"\"\u001b[39m\nCall log:\n\u001b[2m  - Expect \"toHaveTitle\" with timeout 5000ms\u001b[22m\n\u001b[2m    8 × unexpected value \"\"\u001b[22m\n\n    at C:\\Projects\\bbd playwright\\tests\\example.spec.ts:8:24",
+                    "location": {
+                      "file": "C:\\Projects\\bbd playwright\\tests\\example.spec.ts",
+                      "column": 24,
+                      "line": 8
+                    },
+                    "snippet": "\u001b[0m \u001b[90m  6 |\u001b[39m     }\n \u001b[90m  7 |\u001b[39m     \u001b[90m// Expect a title \"to contain\" a substring.\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  8 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page)\u001b[33m.\u001b[39mtoHaveTitle(\u001b[35m/Playwright/\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  9 |\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 10 |\u001b[39m\n \u001b[90m 11 |\u001b[39m test(\u001b[32m\"get started link\"\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Projects\\bbd playwright\\tests\\example.spec.ts",
+                        "column": 24,
+                        "line": 8
+                      },
+                      "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mpage\u001b[39m\u001b[2m).\u001b[22mtoHaveTitle\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected pattern: \u001b[32m/Playwright/\u001b[39m\nReceived string:  \u001b[31m\"\"\u001b[39m\nCall log:\n\u001b[2m  - Expect \"toHaveTitle\" with timeout 5000ms\u001b[22m\n\u001b[2m    8 × unexpected value \"\"\u001b[22m\n\n\n\u001b[0m \u001b[90m  6 |\u001b[39m     }\n \u001b[90m  7 |\u001b[39m     \u001b[90m// Expect a title \"to contain\" a substring.\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  8 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page)\u001b[33m.\u001b[39mtoHaveTitle(\u001b[35m/Playwright/\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  9 |\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 10 |\u001b[39m\n \u001b[90m 11 |\u001b[39m test(\u001b[32m\"get started link\"\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[2m    at C:\\Projects\\bbd playwright\\tests\\example.spec.ts:8:24\u001b[22m"
+                    }
+                  ],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-07-13T07:27:00.421Z",
+                  "startTime": "2025-07-14T11:41:45.007Z",
                   "annotations": [],
-                  "attachments": []
+                  "attachments": [],
+                  "errorLocation": {
+                    "file": "C:\\Projects\\bbd playwright\\tests\\example.spec.ts",
+                    "column": 24,
+                    "line": 8
+                  }
+                },
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1152,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 1,
+                  "startTime": "2025-07-14T11:41:54.040Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Projects\\bbd playwright\\test-results\\example-has-title-chromium-retry1\\trace.zip"
+                    }
+                  ]
                 }
               ],
-              "status": "expected"
+              "status": "flaky"
             }
           ],
           "id": "a30a6eba6312f6b87ea5-b06063a3e613764d08f8",
@@ -155,12 +204,18 @@
                   "workerIndex": 1,
                   "parallelIndex": 1,
                   "status": "passed",
-                  "duration": 4127,
+                  "duration": 1848,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-07-13T07:27:00.433Z",
+                  "steps": [
+                    {
+                      "title": "go to playwright.dev",
+                      "duration": 1220
+                    }
+                  ],
+                  "startTime": "2025-07-14T11:41:45.058Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -170,7 +225,7 @@
           ],
           "id": "a30a6eba6312f6b87ea5-274e97907a6e3638a22f",
           "file": "example.spec.ts",
-          "line": 10,
+          "line": 11,
           "column": 5
         },
         {
@@ -186,20 +241,63 @@
               "projectName": "firefox",
               "results": [
                 {
-                  "workerIndex": 4,
-                  "parallelIndex": 0,
-                  "status": "passed",
-                  "duration": 2794,
-                  "errors": [],
+                  "workerIndex": 5,
+                  "parallelIndex": 2,
+                  "status": "failed",
+                  "duration": 7806,
+                  "error": {
+                    "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mpage\u001b[39m\u001b[2m).\u001b[22mtoHaveTitle\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected pattern: \u001b[32m/Playwright/\u001b[39m\nReceived string:  \u001b[31m\"\"\u001b[39m\nCall log:\n\u001b[2m  - Expect \"toHaveTitle\" with timeout 5000ms\u001b[22m\n\u001b[2m    8 × unexpected value \"\"\u001b[22m\n",
+                    "stack": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mpage\u001b[39m\u001b[2m).\u001b[22mtoHaveTitle\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected pattern: \u001b[32m/Playwright/\u001b[39m\nReceived string:  \u001b[31m\"\"\u001b[39m\nCall log:\n\u001b[2m  - Expect \"toHaveTitle\" with timeout 5000ms\u001b[22m\n\u001b[2m    8 × unexpected value \"\"\u001b[22m\n\n    at C:\\Projects\\bbd playwright\\tests\\example.spec.ts:8:24",
+                    "location": {
+                      "file": "C:\\Projects\\bbd playwright\\tests\\example.spec.ts",
+                      "column": 24,
+                      "line": 8
+                    },
+                    "snippet": "\u001b[0m \u001b[90m  6 |\u001b[39m     }\n \u001b[90m  7 |\u001b[39m     \u001b[90m// Expect a title \"to contain\" a substring.\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  8 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page)\u001b[33m.\u001b[39mtoHaveTitle(\u001b[35m/Playwright/\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  9 |\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 10 |\u001b[39m\n \u001b[90m 11 |\u001b[39m test(\u001b[32m\"get started link\"\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Projects\\bbd playwright\\tests\\example.spec.ts",
+                        "column": 24,
+                        "line": 8
+                      },
+                      "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mpage\u001b[39m\u001b[2m).\u001b[22mtoHaveTitle\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected pattern: \u001b[32m/Playwright/\u001b[39m\nReceived string:  \u001b[31m\"\"\u001b[39m\nCall log:\n\u001b[2m  - Expect \"toHaveTitle\" with timeout 5000ms\u001b[22m\n\u001b[2m    8 × unexpected value \"\"\u001b[22m\n\n\n\u001b[0m \u001b[90m  6 |\u001b[39m     }\n \u001b[90m  7 |\u001b[39m     \u001b[90m// Expect a title \"to contain\" a substring.\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  8 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page)\u001b[33m.\u001b[39mtoHaveTitle(\u001b[35m/Playwright/\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  9 |\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 10 |\u001b[39m\n \u001b[90m 11 |\u001b[39m test(\u001b[32m\"get started link\"\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[2m    at C:\\Projects\\bbd playwright\\tests\\example.spec.ts:8:24\u001b[22m"
+                    }
+                  ],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-07-13T07:27:10.543Z",
+                  "startTime": "2025-07-14T11:41:56.968Z",
                   "annotations": [],
-                  "attachments": []
+                  "attachments": [],
+                  "errorLocation": {
+                    "file": "C:\\Projects\\bbd playwright\\tests\\example.spec.ts",
+                    "column": 24,
+                    "line": 8
+                  }
+                },
+                {
+                  "workerIndex": 9,
+                  "parallelIndex": 2,
+                  "status": "passed",
+                  "duration": 8891,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 1,
+                  "startTime": "2025-07-14T11:42:12.249Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Projects\\bbd playwright\\test-results\\example-has-title-firefox-retry1\\trace.zip"
+                    }
+                  ]
                 }
               ],
-              "status": "expected"
+              "status": "flaky"
             }
           ],
           "id": "a30a6eba6312f6b87ea5-f53a5ad453cd33dc57d5",
@@ -220,15 +318,21 @@
               "projectName": "firefox",
               "results": [
                 {
-                  "workerIndex": 5,
+                  "workerIndex": 6,
                   "parallelIndex": 3,
                   "status": "passed",
-                  "duration": 4614,
+                  "duration": 5849,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-07-13T07:27:10.603Z",
+                  "steps": [
+                    {
+                      "title": "go to playwright.dev",
+                      "duration": 1813
+                    }
+                  ],
+                  "startTime": "2025-07-14T11:41:57.037Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -238,7 +342,7 @@
           ],
           "id": "a30a6eba6312f6b87ea5-bfe080d6fe34297f494c",
           "file": "example.spec.ts",
-          "line": 10,
+          "line": 11,
           "column": 5
         },
         {
@@ -254,20 +358,63 @@
               "projectName": "webkit",
               "results": [
                 {
-                  "workerIndex": 10,
-                  "parallelIndex": 1,
-                  "status": "passed",
-                  "duration": 1306,
-                  "errors": [],
+                  "workerIndex": 12,
+                  "parallelIndex": 3,
+                  "status": "failed",
+                  "duration": 5817,
+                  "error": {
+                    "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mpage\u001b[39m\u001b[2m).\u001b[22mtoHaveTitle\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected pattern: \u001b[32m/Playwright/\u001b[39m\nReceived string:  \u001b[31m\"\"\u001b[39m\nCall log:\n\u001b[2m  - Expect \"toHaveTitle\" with timeout 5000ms\u001b[22m\n\u001b[2m    8 × unexpected value \"\"\u001b[22m\n",
+                    "stack": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mpage\u001b[39m\u001b[2m).\u001b[22mtoHaveTitle\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected pattern: \u001b[32m/Playwright/\u001b[39m\nReceived string:  \u001b[31m\"\"\u001b[39m\nCall log:\n\u001b[2m  - Expect \"toHaveTitle\" with timeout 5000ms\u001b[22m\n\u001b[2m    8 × unexpected value \"\"\u001b[22m\n\n    at C:\\Projects\\bbd playwright\\tests\\example.spec.ts:8:24",
+                    "location": {
+                      "file": "C:\\Projects\\bbd playwright\\tests\\example.spec.ts",
+                      "column": 24,
+                      "line": 8
+                    },
+                    "snippet": "\u001b[0m \u001b[90m  6 |\u001b[39m     }\n \u001b[90m  7 |\u001b[39m     \u001b[90m// Expect a title \"to contain\" a substring.\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  8 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page)\u001b[33m.\u001b[39mtoHaveTitle(\u001b[35m/Playwright/\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  9 |\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 10 |\u001b[39m\n \u001b[90m 11 |\u001b[39m test(\u001b[32m\"get started link\"\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Projects\\bbd playwright\\tests\\example.spec.ts",
+                        "column": 24,
+                        "line": 8
+                      },
+                      "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mpage\u001b[39m\u001b[2m).\u001b[22mtoHaveTitle\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected pattern: \u001b[32m/Playwright/\u001b[39m\nReceived string:  \u001b[31m\"\"\u001b[39m\nCall log:\n\u001b[2m  - Expect \"toHaveTitle\" with timeout 5000ms\u001b[22m\n\u001b[2m    8 × unexpected value \"\"\u001b[22m\n\n\n\u001b[0m \u001b[90m  6 |\u001b[39m     }\n \u001b[90m  7 |\u001b[39m     \u001b[90m// Expect a title \"to contain\" a substring.\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  8 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page)\u001b[33m.\u001b[39mtoHaveTitle(\u001b[35m/Playwright/\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  9 |\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 10 |\u001b[39m\n \u001b[90m 11 |\u001b[39m test(\u001b[32m\"get started link\"\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[2m    at C:\\Projects\\bbd playwright\\tests\\example.spec.ts:8:24\u001b[22m"
+                    }
+                  ],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-07-13T07:27:32.667Z",
+                  "startTime": "2025-07-14T11:42:39.999Z",
                   "annotations": [],
-                  "attachments": []
+                  "attachments": [],
+                  "errorLocation": {
+                    "file": "C:\\Projects\\bbd playwright\\tests\\example.spec.ts",
+                    "column": 24,
+                    "line": 8
+                  }
+                },
+                {
+                  "workerIndex": 15,
+                  "parallelIndex": 3,
+                  "status": "passed",
+                  "duration": 3195,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 1,
+                  "startTime": "2025-07-14T11:42:49.661Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Projects\\bbd playwright\\test-results\\example-has-title-webkit-retry1\\trace.zip"
+                    }
+                  ]
                 }
               ],
-              "status": "expected"
+              "status": "flaky"
             }
           ],
           "id": "a30a6eba6312f6b87ea5-4a26ebd06a6b810edcc2",
@@ -288,15 +435,21 @@
               "projectName": "webkit",
               "results": [
                 {
-                  "workerIndex": 9,
-                  "parallelIndex": 0,
+                  "workerIndex": 11,
+                  "parallelIndex": 1,
                   "status": "passed",
-                  "duration": 2069,
+                  "duration": 2479,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-07-13T07:27:32.561Z",
+                  "steps": [
+                    {
+                      "title": "go to playwright.dev",
+                      "duration": 891
+                    }
+                  ],
+                  "startTime": "2025-07-14T11:42:39.441Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -306,7 +459,7 @@
           ],
           "id": "a30a6eba6312f6b87ea5-1eb159041d56409ed83c",
           "file": "example.spec.ts",
-          "line": 10,
+          "line": 11,
           "column": 5
         }
       ]
@@ -340,12 +493,12 @@
                       "workerIndex": 2,
                       "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 4523,
+                      "duration": 1320,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-13T07:27:00.453Z",
+                      "startTime": "2025-07-14T11:41:45.085Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -374,12 +527,12 @@
                       "workerIndex": 3,
                       "parallelIndex": 3,
                       "status": "passed",
-                      "duration": 4580,
+                      "duration": 1226,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-13T07:27:00.419Z",
+                      "startTime": "2025-07-14T11:41:45.100Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -405,15 +558,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 0,
-                      "parallelIndex": 0,
+                      "workerIndex": 3,
+                      "parallelIndex": 3,
                       "status": "passed",
-                      "duration": 753,
+                      "duration": 841,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-13T07:27:04.727Z",
+                      "startTime": "2025-07-14T11:41:46.747Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -439,15 +592,15 @@
                   "projectName": "firefox",
                   "results": [
                     {
-                      "workerIndex": 6,
-                      "parallelIndex": 1,
+                      "workerIndex": 7,
+                      "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 3789,
+                      "duration": 7107,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-13T07:27:10.802Z",
+                      "startTime": "2025-07-14T11:41:57.531Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -473,15 +626,15 @@
                   "projectName": "firefox",
                   "results": [
                     {
-                      "workerIndex": 4,
-                      "parallelIndex": 0,
+                      "workerIndex": 6,
+                      "parallelIndex": 3,
                       "status": "passed",
-                      "duration": 1388,
+                      "duration": 2649,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-13T07:27:14.296Z",
+                      "startTime": "2025-07-14T11:42:05.110Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -507,15 +660,15 @@
                   "projectName": "firefox",
                   "results": [
                     {
-                      "workerIndex": 4,
-                      "parallelIndex": 0,
+                      "workerIndex": 6,
+                      "parallelIndex": 3,
                       "status": "passed",
-                      "duration": 2101,
+                      "duration": 2303,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-13T07:27:15.739Z",
+                      "startTime": "2025-07-14T11:42:07.798Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -541,15 +694,15 @@
                   "projectName": "webkit",
                   "results": [
                     {
-                      "workerIndex": 11,
+                      "workerIndex": 13,
                       "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 1366,
+                      "duration": 2008,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-13T07:27:36.089Z",
+                      "startTime": "2025-07-14T11:42:40.986Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -575,15 +728,15 @@
                   "projectName": "webkit",
                   "results": [
                     {
-                      "workerIndex": 10,
+                      "workerIndex": 11,
                       "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 1275,
+                      "duration": 1445,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-13T07:27:34.120Z",
+                      "startTime": "2025-07-14T11:42:42.270Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -609,15 +762,15 @@
                   "projectName": "webkit",
                   "results": [
                     {
-                      "workerIndex": 9,
-                      "parallelIndex": 0,
+                      "workerIndex": 13,
+                      "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 1647,
+                      "duration": 2598,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-13T07:27:34.796Z",
+                      "startTime": "2025-07-14T11:42:43.159Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -651,15 +804,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 1,
-                      "parallelIndex": 1,
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 652,
+                      "duration": 863,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-13T07:27:04.960Z",
+                      "startTime": "2025-07-14T11:41:46.827Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -685,15 +838,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 3,
-                      "parallelIndex": 3,
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 714,
+                      "duration": 892,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-13T07:27:05.277Z",
+                      "startTime": "2025-07-14T11:41:47.212Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -719,15 +872,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 2,
-                      "parallelIndex": 2,
+                      "workerIndex": 3,
+                      "parallelIndex": 3,
                       "status": "passed",
-                      "duration": 801,
+                      "duration": 956,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-13T07:27:05.333Z",
+                      "startTime": "2025-07-14T11:41:47.602Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -753,15 +906,15 @@
                   "projectName": "firefox",
                   "results": [
                     {
-                      "workerIndex": 6,
-                      "parallelIndex": 1,
+                      "workerIndex": 7,
+                      "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 2419,
+                      "duration": 2344,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-13T07:27:16.189Z",
+                      "startTime": "2025-07-14T11:42:08.185Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -787,15 +940,15 @@
                   "projectName": "firefox",
                   "results": [
                     {
-                      "workerIndex": 4,
-                      "parallelIndex": 0,
+                      "workerIndex": 6,
+                      "parallelIndex": 3,
                       "status": "passed",
-                      "duration": 2045,
+                      "duration": 1978,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-13T07:27:17.866Z",
+                      "startTime": "2025-07-14T11:42:10.132Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -821,15 +974,15 @@
                   "projectName": "firefox",
                   "results": [
                     {
-                      "workerIndex": 5,
-                      "parallelIndex": 3,
+                      "workerIndex": 7,
+                      "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 2815,
+                      "duration": 2253,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-13T07:27:18.063Z",
+                      "startTime": "2025-07-14T11:42:10.549Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -855,15 +1008,15 @@
                   "projectName": "webkit",
                   "results": [
                     {
-                      "workerIndex": 10,
+                      "workerIndex": 11,
                       "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 2312,
+                      "duration": 3829,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-13T07:27:35.406Z",
+                      "startTime": "2025-07-14T11:42:43.737Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -889,15 +1042,15 @@
                   "projectName": "webkit",
                   "results": [
                     {
-                      "workerIndex": 9,
-                      "parallelIndex": 0,
+                      "workerIndex": 13,
+                      "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 2972,
+                      "duration": 5458,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-13T07:27:36.460Z",
+                      "startTime": "2025-07-14T11:42:45.784Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -924,14 +1077,14 @@
                   "results": [
                     {
                       "workerIndex": 11,
-                      "parallelIndex": 2,
+                      "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 4433,
+                      "duration": 6481,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-13T07:27:37.546Z",
+                      "startTime": "2025-07-14T11:42:47.582Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -965,15 +1118,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 0,
-                      "parallelIndex": 0,
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 675,
+                      "duration": 768,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-13T07:27:05.496Z",
+                      "startTime": "2025-07-14T11:41:47.706Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1002,12 +1155,12 @@
                       "workerIndex": 1,
                       "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 663,
+                      "duration": 817,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-13T07:27:05.621Z",
+                      "startTime": "2025-07-14T11:41:48.124Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1033,15 +1186,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 3,
-                      "parallelIndex": 3,
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 612,
+                      "duration": 841,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-13T07:27:06.001Z",
+                      "startTime": "2025-07-14T11:41:48.484Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1068,14 +1221,14 @@
                   "results": [
                     {
                       "workerIndex": 6,
-                      "parallelIndex": 1,
+                      "parallelIndex": 3,
                       "status": "passed",
-                      "duration": 1577,
+                      "duration": 1821,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-13T07:27:18.648Z",
+                      "startTime": "2025-07-14T11:42:12.130Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1101,15 +1254,15 @@
                   "projectName": "firefox",
                   "results": [
                     {
-                      "workerIndex": 4,
+                      "workerIndex": 7,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 1454,
+                      "duration": 2059,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-13T07:27:19.933Z",
+                      "startTime": "2025-07-14T11:42:12.831Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1136,14 +1289,14 @@
                   "results": [
                     {
                       "workerIndex": 6,
-                      "parallelIndex": 1,
+                      "parallelIndex": 3,
                       "status": "passed",
-                      "duration": 1365,
+                      "duration": 2153,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-13T07:27:20.254Z",
+                      "startTime": "2025-07-14T11:42:13.969Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1169,15 +1322,15 @@
                   "projectName": "webkit",
                   "results": [
                     {
-                      "workerIndex": 10,
-                      "parallelIndex": 1,
+                      "workerIndex": 13,
+                      "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 2844,
+                      "duration": 4152,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-13T07:27:37.745Z",
+                      "startTime": "2025-07-14T11:42:51.264Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1203,15 +1356,15 @@
                   "projectName": "webkit",
                   "results": [
                     {
-                      "workerIndex": 9,
-                      "parallelIndex": 0,
+                      "workerIndex": 15,
+                      "parallelIndex": 3,
                       "status": "passed",
-                      "duration": 2983,
+                      "duration": 3256,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-13T07:27:39.450Z",
+                      "startTime": "2025-07-14T11:42:53.383Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1237,15 +1390,15 @@
                   "projectName": "webkit",
                   "results": [
                     {
-                      "workerIndex": 10,
+                      "workerIndex": 11,
                       "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 2700,
+                      "duration": 3318,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-13T07:27:40.622Z",
+                      "startTime": "2025-07-14T11:42:54.077Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1279,15 +1432,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 2,
-                      "parallelIndex": 2,
+                      "workerIndex": 3,
+                      "parallelIndex": 3,
                       "status": "passed",
-                      "duration": 678,
+                      "duration": 849,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-13T07:27:06.145Z",
+                      "startTime": "2025-07-14T11:41:48.573Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1313,15 +1466,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 0,
-                      "parallelIndex": 0,
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 717,
+                      "duration": 793,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-13T07:27:06.178Z",
+                      "startTime": "2025-07-14T11:41:48.952Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1347,15 +1500,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 1,
-                      "parallelIndex": 1,
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 707,
+                      "duration": 919,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-13T07:27:06.291Z",
+                      "startTime": "2025-07-14T11:41:49.335Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1384,12 +1537,12 @@
                       "workerIndex": 3,
                       "parallelIndex": 3,
                       "status": "passed",
-                      "duration": 707,
+                      "duration": 920,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-13T07:27:06.621Z",
+                      "startTime": "2025-07-14T11:41:49.435Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1415,15 +1568,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 2,
-                      "parallelIndex": 2,
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 747,
+                      "duration": 901,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-13T07:27:06.831Z",
+                      "startTime": "2025-07-14T11:41:49.758Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1449,15 +1602,15 @@
                   "projectName": "firefox",
                   "results": [
                     {
-                      "workerIndex": 5,
-                      "parallelIndex": 3,
+                      "workerIndex": 7,
+                      "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 1455,
+                      "duration": 1969,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-13T07:27:20.899Z",
+                      "startTime": "2025-07-14T11:42:14.911Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1483,15 +1636,15 @@
                   "projectName": "firefox",
                   "results": [
                     {
-                      "workerIndex": 4,
-                      "parallelIndex": 0,
+                      "workerIndex": 10,
+                      "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 1442,
+                      "duration": 9260,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-13T07:27:21.396Z",
+                      "startTime": "2025-07-14T11:42:20.717Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1518,14 +1671,14 @@
                   "results": [
                     {
                       "workerIndex": 6,
-                      "parallelIndex": 1,
+                      "parallelIndex": 3,
                       "status": "passed",
-                      "duration": 1279,
+                      "duration": 2390,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-13T07:27:21.631Z",
+                      "startTime": "2025-07-14T11:42:16.136Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1551,15 +1704,15 @@
                   "projectName": "firefox",
                   "results": [
                     {
-                      "workerIndex": 5,
-                      "parallelIndex": 3,
+                      "workerIndex": 7,
+                      "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 1524,
+                      "duration": 2270,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-13T07:27:22.384Z",
+                      "startTime": "2025-07-14T11:42:16.900Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1585,15 +1738,15 @@
                   "projectName": "firefox",
                   "results": [
                     {
-                      "workerIndex": 4,
-                      "parallelIndex": 0,
+                      "workerIndex": 6,
+                      "parallelIndex": 3,
                       "status": "passed",
-                      "duration": 1542,
+                      "duration": 3510,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-13T07:27:22.864Z",
+                      "startTime": "2025-07-14T11:42:18.540Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1619,15 +1772,15 @@
                   "projectName": "webkit",
                   "results": [
                     {
-                      "workerIndex": 11,
+                      "workerIndex": 13,
                       "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 2092,
+                      "duration": 2976,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-13T07:27:41.990Z",
+                      "startTime": "2025-07-14T11:42:55.428Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1653,15 +1806,15 @@
                   "projectName": "webkit",
                   "results": [
                     {
-                      "workerIndex": 9,
-                      "parallelIndex": 0,
+                      "workerIndex": 15,
+                      "parallelIndex": 3,
                       "status": "passed",
-                      "duration": 2176,
+                      "duration": 3775,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-13T07:27:42.441Z",
+                      "startTime": "2025-07-14T11:42:56.656Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1687,15 +1840,15 @@
                   "projectName": "webkit",
                   "results": [
                     {
-                      "workerIndex": 10,
+                      "workerIndex": 11,
                       "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 1937,
+                      "duration": 3965,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-13T07:27:43.330Z",
+                      "startTime": "2025-07-14T11:42:57.406Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1721,15 +1874,15 @@
                   "projectName": "webkit",
                   "results": [
                     {
-                      "workerIndex": 11,
+                      "workerIndex": 13,
                       "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 2059,
+                      "duration": 3775,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-13T07:27:44.091Z",
+                      "startTime": "2025-07-14T11:42:58.423Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1755,15 +1908,15 @@
                   "projectName": "webkit",
                   "results": [
                     {
-                      "workerIndex": 9,
+                      "workerIndex": 16,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 2053,
+                      "duration": 3847,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-13T07:27:44.628Z",
+                      "startTime": "2025-07-14T11:43:02.777Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1797,15 +1950,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 0,
-                      "parallelIndex": 0,
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 497,
+                      "duration": 758,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-13T07:27:06.904Z",
+                      "startTime": "2025-07-14T11:41:50.267Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1831,15 +1984,15 @@
                   "projectName": "firefox",
                   "results": [
                     {
-                      "workerIndex": 6,
-                      "parallelIndex": 1,
+                      "workerIndex": 7,
+                      "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 1219,
+                      "duration": 2643,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-13T07:27:22.921Z",
+                      "startTime": "2025-07-14T11:42:19.190Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1865,15 +2018,15 @@
                   "projectName": "webkit",
                   "results": [
                     {
-                      "workerIndex": 10,
-                      "parallelIndex": 1,
+                      "workerIndex": 15,
+                      "parallelIndex": 3,
                       "status": "passed",
-                      "duration": 1112,
+                      "duration": 1829,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-13T07:27:45.276Z",
+                      "startTime": "2025-07-14T11:43:00.446Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1907,15 +2060,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 1,
-                      "parallelIndex": 1,
+                      "workerIndex": 3,
+                      "parallelIndex": 3,
                       "status": "passed",
-                      "duration": 625,
+                      "duration": 880,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-13T07:27:07.005Z",
+                      "startTime": "2025-07-14T11:41:50.368Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1941,15 +2094,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 3,
-                      "parallelIndex": 3,
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 608,
+                      "duration": 912,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-13T07:27:07.337Z",
+                      "startTime": "2025-07-14T11:41:50.670Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1975,15 +2128,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 0,
-                      "parallelIndex": 0,
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 596,
+                      "duration": 928,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-13T07:27:07.414Z",
+                      "startTime": "2025-07-14T11:41:51.039Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2009,15 +2162,15 @@
                   "projectName": "firefox",
                   "results": [
                     {
-                      "workerIndex": 5,
-                      "parallelIndex": 3,
+                      "workerIndex": 7,
+                      "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 1130,
+                      "duration": 1940,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-13T07:27:23.947Z",
+                      "startTime": "2025-07-14T11:42:21.857Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2044,14 +2197,14 @@
                   "results": [
                     {
                       "workerIndex": 6,
-                      "parallelIndex": 1,
+                      "parallelIndex": 3,
                       "status": "passed",
-                      "duration": 1535,
+                      "duration": 2277,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-13T07:27:24.152Z",
+                      "startTime": "2025-07-14T11:42:22.069Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2077,15 +2230,15 @@
                   "projectName": "firefox",
                   "results": [
                     {
-                      "workerIndex": 4,
+                      "workerIndex": 7,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 1393,
+                      "duration": 2913,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-13T07:27:24.416Z",
+                      "startTime": "2025-07-14T11:42:23.822Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2112,14 +2265,14 @@
                   "results": [
                     {
                       "workerIndex": 11,
-                      "parallelIndex": 2,
+                      "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 1732,
+                      "duration": 3218,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-13T07:27:46.159Z",
+                      "startTime": "2025-07-14T11:43:01.385Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2145,15 +2298,15 @@
                   "projectName": "webkit",
                   "results": [
                     {
-                      "workerIndex": 10,
-                      "parallelIndex": 1,
+                      "workerIndex": 13,
+                      "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 2622,
+                      "duration": 4044,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-13T07:27:46.397Z",
+                      "startTime": "2025-07-14T11:43:02.212Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2179,15 +2332,15 @@
                   "projectName": "webkit",
                   "results": [
                     {
-                      "workerIndex": 9,
-                      "parallelIndex": 0,
+                      "workerIndex": 15,
+                      "parallelIndex": 3,
                       "status": "passed",
-                      "duration": 2838,
+                      "duration": 3729,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-13T07:27:46.690Z",
+                      "startTime": "2025-07-14T11:43:02.287Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2221,15 +2374,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 2,
-                      "parallelIndex": 2,
+                      "workerIndex": 3,
+                      "parallelIndex": 3,
                       "status": "passed",
-                      "duration": 713,
+                      "duration": 988,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-13T07:27:07.590Z",
+                      "startTime": "2025-07-14T11:41:51.264Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2255,15 +2408,15 @@
                   "projectName": "firefox",
                   "results": [
                     {
-                      "workerIndex": 5,
+                      "workerIndex": 6,
                       "parallelIndex": 3,
                       "status": "passed",
-                      "duration": 1924,
+                      "duration": 3407,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-13T07:27:25.094Z",
+                      "startTime": "2025-07-14T11:42:24.377Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2290,14 +2443,14 @@
                   "results": [
                     {
                       "workerIndex": 11,
-                      "parallelIndex": 2,
+                      "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 2480,
+                      "duration": 2810,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-13T07:27:47.902Z",
+                      "startTime": "2025-07-14T11:43:04.616Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2334,12 +2487,12 @@
                       "workerIndex": 1,
                       "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 715,
+                      "duration": 1040,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-13T07:27:07.638Z",
+                      "startTime": "2025-07-14T11:41:51.593Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2365,10 +2518,10 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 3,
-                      "parallelIndex": 3,
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 1002,
+                      "duration": 1131,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
@@ -2376,18 +2529,18 @@
                       "steps": [
                         {
                           "title": "Showing all items",
-                          "duration": 52
+                          "duration": 80
                         },
                         {
                           "title": "Showing active items",
-                          "duration": 49
+                          "duration": 69
                         },
                         {
                           "title": "Showing completed items",
-                          "duration": 47
+                          "duration": 59
                         }
                       ],
-                      "startTime": "2025-07-13T07:27:07.954Z",
+                      "startTime": "2025-07-14T11:41:51.987Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2413,15 +2566,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 0,
-                      "parallelIndex": 0,
+                      "workerIndex": 3,
+                      "parallelIndex": 3,
                       "status": "passed",
-                      "duration": 818,
+                      "duration": 1073,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-13T07:27:08.019Z",
+                      "startTime": "2025-07-14T11:41:52.274Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2447,10 +2600,10 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 2,
-                      "parallelIndex": 2,
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
                       "status": "failed",
-                      "duration": 5921,
+                      "duration": 6193,
                       "error": {
                         "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nLocator: getByTestId('todo-item')\nExpected: \u001b[32m4\u001b[39m\nReceived: \u001b[31m3\u001b[39m\nCall log:\n\u001b[2m  - Expect \"toHaveCount\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('todo-item')\u001b[22m\n\u001b[2m    9 × locator resolved to 3 elements\u001b[22m\n\u001b[2m      - unexpected value \"3\"\u001b[22m\n",
                         "stack": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nLocator: getByTestId('todo-item')\nExpected: \u001b[32m4\u001b[39m\nReceived: \u001b[31m3\u001b[39m\nCall log:\n\u001b[2m  - Expect \"toHaveCount\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('todo-item')\u001b[22m\n\u001b[2m    9 × locator resolved to 3 elements\u001b[22m\n\u001b[2m      - unexpected value \"3\"\u001b[22m\n\n    at C:\\Projects\\bbd playwright\\tests\\tests-examples\\demo-todo-app.spec.ts:452:53",
@@ -2474,7 +2627,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-13T07:27:08.311Z",
+                      "startTime": "2025-07-14T11:41:52.648Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -2490,13 +2643,13 @@
                       }
                     },
                     {
-                      "workerIndex": 7,
-                      "parallelIndex": 2,
+                      "workerIndex": 8,
+                      "parallelIndex": 1,
                       "status": "failed",
-                      "duration": 7247,
+                      "duration": 7935,
                       "error": {
-                        "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nLocator: getByTestId('todo-item')\nExpected: \u001b[32m4\u001b[39m\nReceived: \u001b[31m3\u001b[39m\nCall log:\n\u001b[2m  - Expect \"toHaveCount\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('todo-item')\u001b[22m\n\u001b[2m    8 × locator resolved to 3 elements\u001b[22m\n\u001b[2m      - unexpected value \"3\"\u001b[22m\n",
-                        "stack": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nLocator: getByTestId('todo-item')\nExpected: \u001b[32m4\u001b[39m\nReceived: \u001b[31m3\u001b[39m\nCall log:\n\u001b[2m  - Expect \"toHaveCount\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('todo-item')\u001b[22m\n\u001b[2m    8 × locator resolved to 3 elements\u001b[22m\n\u001b[2m      - unexpected value \"3\"\u001b[22m\n\n    at C:\\Projects\\bbd playwright\\tests\\tests-examples\\demo-todo-app.spec.ts:452:53",
+                        "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nLocator: getByTestId('todo-item')\nExpected: \u001b[32m4\u001b[39m\nReceived: \u001b[31m3\u001b[39m\nCall log:\n\u001b[2m  - Expect \"toHaveCount\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('todo-item')\u001b[22m\n\u001b[2m    9 × locator resolved to 3 elements\u001b[22m\n\u001b[2m      - unexpected value \"3\"\u001b[22m\n",
+                        "stack": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nLocator: getByTestId('todo-item')\nExpected: \u001b[32m4\u001b[39m\nReceived: \u001b[31m3\u001b[39m\nCall log:\n\u001b[2m  - Expect \"toHaveCount\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('todo-item')\u001b[22m\n\u001b[2m    9 × locator resolved to 3 elements\u001b[22m\n\u001b[2m      - unexpected value \"3\"\u001b[22m\n\n    at C:\\Projects\\bbd playwright\\tests\\tests-examples\\demo-todo-app.spec.ts:452:53",
                         "location": {
                           "file": "C:\\Projects\\bbd playwright\\tests\\tests-examples\\demo-todo-app.spec.ts",
                           "column": 53,
@@ -2511,13 +2664,13 @@
                             "column": 53,
                             "line": 452
                           },
-                          "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nLocator: getByTestId('todo-item')\nExpected: \u001b[32m4\u001b[39m\nReceived: \u001b[31m3\u001b[39m\nCall log:\n\u001b[2m  - Expect \"toHaveCount\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('todo-item')\u001b[22m\n\u001b[2m    8 × locator resolved to 3 elements\u001b[22m\n\u001b[2m      - unexpected value \"3\"\u001b[22m\n\n\n\u001b[0m \u001b[90m 450 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByRole(\u001b[32m\"link\"\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m\"Completed\"\u001b[39m })\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 451 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByRole(\u001b[32m\"link\"\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m\"All\"\u001b[39m })\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 452 |\u001b[39m         \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByTestId(\u001b[32m\"todo-item\"\u001b[39m))\u001b[33m.\u001b[39mtoHaveCount(\u001b[35m4\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 453 |\u001b[39m     })\u001b[33m;\u001b[39m\n \u001b[90m 454 |\u001b[39m\n \u001b[90m 455 |\u001b[39m     test\u001b[33m.\u001b[39mskip(\u001b[32m\"should highlight the currently applied filter\"\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({\u001b[0m\n\u001b[2m    at C:\\Projects\\bbd playwright\\tests\\tests-examples\\demo-todo-app.spec.ts:452:53\u001b[22m"
+                          "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nLocator: getByTestId('todo-item')\nExpected: \u001b[32m4\u001b[39m\nReceived: \u001b[31m3\u001b[39m\nCall log:\n\u001b[2m  - Expect \"toHaveCount\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('todo-item')\u001b[22m\n\u001b[2m    9 × locator resolved to 3 elements\u001b[22m\n\u001b[2m      - unexpected value \"3\"\u001b[22m\n\n\n\u001b[0m \u001b[90m 450 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByRole(\u001b[32m\"link\"\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m\"Completed\"\u001b[39m })\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 451 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByRole(\u001b[32m\"link\"\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m\"All\"\u001b[39m })\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 452 |\u001b[39m         \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByTestId(\u001b[32m\"todo-item\"\u001b[39m))\u001b[33m.\u001b[39mtoHaveCount(\u001b[35m4\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 453 |\u001b[39m     })\u001b[33m;\u001b[39m\n \u001b[90m 454 |\u001b[39m\n \u001b[90m 455 |\u001b[39m     test\u001b[33m.\u001b[39mskip(\u001b[32m\"should highlight the currently applied filter\"\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({\u001b[0m\n\u001b[2m    at C:\\Projects\\bbd playwright\\tests\\tests-examples\\demo-todo-app.spec.ts:452:53\u001b[22m"
                         }
                       ],
                       "stdout": [],
                       "stderr": [],
                       "retry": 1,
-                      "startTime": "2025-07-13T07:27:17.278Z",
+                      "startTime": "2025-07-14T11:42:04.984Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -2576,7 +2729,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-13T07:27:08.356Z",
+                      "startTime": "2025-07-14T11:41:53.131Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2602,15 +2755,15 @@
                   "projectName": "firefox",
                   "results": [
                     {
-                      "workerIndex": 8,
-                      "parallelIndex": 2,
+                      "workerIndex": 7,
+                      "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 3337,
+                      "duration": 2986,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-13T07:27:28.271Z",
+                      "startTime": "2025-07-14T11:42:26.759Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2636,10 +2789,10 @@
                   "projectName": "firefox",
                   "results": [
                     {
-                      "workerIndex": 6,
-                      "parallelIndex": 1,
+                      "workerIndex": 9,
+                      "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 1605,
+                      "duration": 6891,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
@@ -2647,18 +2800,18 @@
                       "steps": [
                         {
                           "title": "Showing all items",
-                          "duration": 105
+                          "duration": 815
                         },
                         {
                           "title": "Showing active items",
-                          "duration": 95
+                          "duration": 224
                         },
                         {
                           "title": "Showing completed items",
-                          "duration": 89
+                          "duration": 345
                         }
                       ],
-                      "startTime": "2025-07-13T07:27:25.703Z",
+                      "startTime": "2025-07-14T11:42:26.986Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2684,15 +2837,15 @@
                   "projectName": "firefox",
                   "results": [
                     {
-                      "workerIndex": 4,
-                      "parallelIndex": 0,
+                      "workerIndex": 6,
+                      "parallelIndex": 3,
                       "status": "passed",
-                      "duration": 1364,
+                      "duration": 2936,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-13T07:27:25.822Z",
+                      "startTime": "2025-07-14T11:42:27.805Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2718,13 +2871,13 @@
                   "projectName": "firefox",
                   "results": [
                     {
-                      "workerIndex": 5,
-                      "parallelIndex": 3,
+                      "workerIndex": 7,
+                      "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 6736,
+                      "duration": 8015,
                       "error": {
-                        "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nLocator: getByTestId('todo-item')\nExpected: \u001b[32m4\u001b[39m\nReceived: \u001b[31m3\u001b[39m\nCall log:\n\u001b[2m  - Expect \"toHaveCount\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('todo-item')\u001b[22m\n\u001b[2m    9 × locator resolved to 3 elements\u001b[22m\n\u001b[2m      - unexpected value \"3\"\u001b[22m\n",
-                        "stack": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nLocator: getByTestId('todo-item')\nExpected: \u001b[32m4\u001b[39m\nReceived: \u001b[31m3\u001b[39m\nCall log:\n\u001b[2m  - Expect \"toHaveCount\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('todo-item')\u001b[22m\n\u001b[2m    9 × locator resolved to 3 elements\u001b[22m\n\u001b[2m      - unexpected value \"3\"\u001b[22m\n\n    at C:\\Projects\\bbd playwright\\tests\\tests-examples\\demo-todo-app.spec.ts:452:53",
+                        "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nLocator: getByTestId('todo-item')\nExpected: \u001b[32m4\u001b[39m\nReceived: \u001b[31m3\u001b[39m\nCall log:\n\u001b[2m  - Expect \"toHaveCount\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('todo-item')\u001b[22m\n\u001b[2m    8 × locator resolved to 3 elements\u001b[22m\n\u001b[2m      - unexpected value \"3\"\u001b[22m\n",
+                        "stack": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nLocator: getByTestId('todo-item')\nExpected: \u001b[32m4\u001b[39m\nReceived: \u001b[31m3\u001b[39m\nCall log:\n\u001b[2m  - Expect \"toHaveCount\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('todo-item')\u001b[22m\n\u001b[2m    8 × locator resolved to 3 elements\u001b[22m\n\u001b[2m      - unexpected value \"3\"\u001b[22m\n\n    at C:\\Projects\\bbd playwright\\tests\\tests-examples\\demo-todo-app.spec.ts:452:53",
                         "location": {
                           "file": "C:\\Projects\\bbd playwright\\tests\\tests-examples\\demo-todo-app.spec.ts",
                           "column": 53,
@@ -2739,13 +2892,13 @@
                             "column": 53,
                             "line": 452
                           },
-                          "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nLocator: getByTestId('todo-item')\nExpected: \u001b[32m4\u001b[39m\nReceived: \u001b[31m3\u001b[39m\nCall log:\n\u001b[2m  - Expect \"toHaveCount\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('todo-item')\u001b[22m\n\u001b[2m    9 × locator resolved to 3 elements\u001b[22m\n\u001b[2m      - unexpected value \"3\"\u001b[22m\n\n\n\u001b[0m \u001b[90m 450 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByRole(\u001b[32m\"link\"\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m\"Completed\"\u001b[39m })\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 451 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByRole(\u001b[32m\"link\"\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m\"All\"\u001b[39m })\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 452 |\u001b[39m         \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByTestId(\u001b[32m\"todo-item\"\u001b[39m))\u001b[33m.\u001b[39mtoHaveCount(\u001b[35m4\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 453 |\u001b[39m     })\u001b[33m;\u001b[39m\n \u001b[90m 454 |\u001b[39m\n \u001b[90m 455 |\u001b[39m     test\u001b[33m.\u001b[39mskip(\u001b[32m\"should highlight the currently applied filter\"\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({\u001b[0m\n\u001b[2m    at C:\\Projects\\bbd playwright\\tests\\tests-examples\\demo-todo-app.spec.ts:452:53\u001b[22m"
+                          "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nLocator: getByTestId('todo-item')\nExpected: \u001b[32m4\u001b[39m\nReceived: \u001b[31m3\u001b[39m\nCall log:\n\u001b[2m  - Expect \"toHaveCount\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('todo-item')\u001b[22m\n\u001b[2m    8 × locator resolved to 3 elements\u001b[22m\n\u001b[2m      - unexpected value \"3\"\u001b[22m\n\n\n\u001b[0m \u001b[90m 450 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByRole(\u001b[32m\"link\"\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m\"Completed\"\u001b[39m })\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 451 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByRole(\u001b[32m\"link\"\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m\"All\"\u001b[39m })\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 452 |\u001b[39m         \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByTestId(\u001b[32m\"todo-item\"\u001b[39m))\u001b[33m.\u001b[39mtoHaveCount(\u001b[35m4\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 453 |\u001b[39m     })\u001b[33m;\u001b[39m\n \u001b[90m 454 |\u001b[39m\n \u001b[90m 455 |\u001b[39m     test\u001b[33m.\u001b[39mskip(\u001b[32m\"should highlight the currently applied filter\"\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({\u001b[0m\n\u001b[2m    at C:\\Projects\\bbd playwright\\tests\\tests-examples\\demo-todo-app.spec.ts:452:53\u001b[22m"
                         }
                       ],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-13T07:27:27.038Z",
+                      "startTime": "2025-07-14T11:42:29.787Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -2761,13 +2914,13 @@
                       }
                     },
                     {
-                      "workerIndex": 12,
-                      "parallelIndex": 3,
+                      "workerIndex": 14,
+                      "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 9649,
+                      "duration": 14249,
                       "error": {
-                        "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nLocator: getByTestId('todo-item')\nExpected: \u001b[32m4\u001b[39m\nReceived: \u001b[31m3\u001b[39m\nCall log:\n\u001b[2m  - Expect \"toHaveCount\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('todo-item')\u001b[22m\n\u001b[2m    9 × locator resolved to 3 elements\u001b[22m\n\u001b[2m      - unexpected value \"3\"\u001b[22m\n",
-                        "stack": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nLocator: getByTestId('todo-item')\nExpected: \u001b[32m4\u001b[39m\nReceived: \u001b[31m3\u001b[39m\nCall log:\n\u001b[2m  - Expect \"toHaveCount\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('todo-item')\u001b[22m\n\u001b[2m    9 × locator resolved to 3 elements\u001b[22m\n\u001b[2m      - unexpected value \"3\"\u001b[22m\n\n    at C:\\Projects\\bbd playwright\\tests\\tests-examples\\demo-todo-app.spec.ts:452:53",
+                        "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nLocator: getByTestId('todo-item')\nExpected: \u001b[32m4\u001b[39m\nReceived: \u001b[31m3\u001b[39m\nCall log:\n\u001b[2m  - Expect \"toHaveCount\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('todo-item')\u001b[22m\n\u001b[2m    8 × locator resolved to 3 elements\u001b[22m\n\u001b[2m      - unexpected value \"3\"\u001b[22m\n",
+                        "stack": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nLocator: getByTestId('todo-item')\nExpected: \u001b[32m4\u001b[39m\nReceived: \u001b[31m3\u001b[39m\nCall log:\n\u001b[2m  - Expect \"toHaveCount\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('todo-item')\u001b[22m\n\u001b[2m    8 × locator resolved to 3 elements\u001b[22m\n\u001b[2m      - unexpected value \"3\"\u001b[22m\n\n    at C:\\Projects\\bbd playwright\\tests\\tests-examples\\demo-todo-app.spec.ts:452:53",
                         "location": {
                           "file": "C:\\Projects\\bbd playwright\\tests\\tests-examples\\demo-todo-app.spec.ts",
                           "column": 53,
@@ -2782,13 +2935,13 @@
                             "column": 53,
                             "line": 452
                           },
-                          "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nLocator: getByTestId('todo-item')\nExpected: \u001b[32m4\u001b[39m\nReceived: \u001b[31m3\u001b[39m\nCall log:\n\u001b[2m  - Expect \"toHaveCount\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('todo-item')\u001b[22m\n\u001b[2m    9 × locator resolved to 3 elements\u001b[22m\n\u001b[2m      - unexpected value \"3\"\u001b[22m\n\n\n\u001b[0m \u001b[90m 450 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByRole(\u001b[32m\"link\"\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m\"Completed\"\u001b[39m })\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 451 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByRole(\u001b[32m\"link\"\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m\"All\"\u001b[39m })\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 452 |\u001b[39m         \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByTestId(\u001b[32m\"todo-item\"\u001b[39m))\u001b[33m.\u001b[39mtoHaveCount(\u001b[35m4\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 453 |\u001b[39m     })\u001b[33m;\u001b[39m\n \u001b[90m 454 |\u001b[39m\n \u001b[90m 455 |\u001b[39m     test\u001b[33m.\u001b[39mskip(\u001b[32m\"should highlight the currently applied filter\"\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({\u001b[0m\n\u001b[2m    at C:\\Projects\\bbd playwright\\tests\\tests-examples\\demo-todo-app.spec.ts:452:53\u001b[22m"
+                          "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nLocator: getByTestId('todo-item')\nExpected: \u001b[32m4\u001b[39m\nReceived: \u001b[31m3\u001b[39m\nCall log:\n\u001b[2m  - Expect \"toHaveCount\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('todo-item')\u001b[22m\n\u001b[2m    8 × locator resolved to 3 elements\u001b[22m\n\u001b[2m      - unexpected value \"3\"\u001b[22m\n\n\n\u001b[0m \u001b[90m 450 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByRole(\u001b[32m\"link\"\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m\"Completed\"\u001b[39m })\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 451 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByRole(\u001b[32m\"link\"\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m\"All\"\u001b[39m })\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 452 |\u001b[39m         \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByTestId(\u001b[32m\"todo-item\"\u001b[39m))\u001b[33m.\u001b[39mtoHaveCount(\u001b[35m4\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 453 |\u001b[39m     })\u001b[33m;\u001b[39m\n \u001b[90m 454 |\u001b[39m\n \u001b[90m 455 |\u001b[39m     test\u001b[33m.\u001b[39mskip(\u001b[32m\"should highlight the currently applied filter\"\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({\u001b[0m\n\u001b[2m    at C:\\Projects\\bbd playwright\\tests\\tests-examples\\demo-todo-app.spec.ts:452:53\u001b[22m"
                         }
                       ],
                       "stdout": [],
                       "stderr": [],
                       "retry": 1,
-                      "startTime": "2025-07-13T07:27:36.229Z",
+                      "startTime": "2025-07-14T11:42:42.420Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -2847,7 +3000,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-13T07:27:27.190Z",
+                      "startTime": "2025-07-14T11:42:30.788Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2873,15 +3026,15 @@
                   "projectName": "webkit",
                   "results": [
                     {
-                      "workerIndex": 13,
+                      "workerIndex": 15,
                       "parallelIndex": 3,
                       "status": "passed",
-                      "duration": 2924,
+                      "duration": 3791,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-13T07:27:49.520Z",
+                      "startTime": "2025-07-14T11:43:06.028Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2907,10 +3060,10 @@
                   "projectName": "webkit",
                   "results": [
                     {
-                      "workerIndex": 10,
-                      "parallelIndex": 1,
+                      "workerIndex": 13,
+                      "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 3554,
+                      "duration": 4493,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
@@ -2918,18 +3071,18 @@
                       "steps": [
                         {
                           "title": "Showing all items",
-                          "duration": 661
+                          "duration": 539
                         },
                         {
                           "title": "Showing active items",
-                          "duration": 190
+                          "duration": 374
                         },
                         {
                           "title": "Showing completed items",
-                          "duration": 335
+                          "duration": 233
                         }
                       ],
-                      "startTime": "2025-07-13T07:27:49.028Z",
+                      "startTime": "2025-07-14T11:43:06.269Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2955,15 +3108,15 @@
                   "projectName": "webkit",
                   "results": [
                     {
-                      "workerIndex": 9,
+                      "workerIndex": 16,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 2502,
+                      "duration": 3909,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-13T07:27:49.537Z",
+                      "startTime": "2025-07-14T11:43:06.781Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2990,9 +3143,9 @@
                   "results": [
                     {
                       "workerIndex": 11,
-                      "parallelIndex": 2,
+                      "parallelIndex": 1,
                       "status": "failed",
-                      "duration": 8029,
+                      "duration": 9242,
                       "error": {
                         "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nLocator: getByTestId('todo-item')\nExpected: \u001b[32m4\u001b[39m\nReceived: \u001b[31m3\u001b[39m\nCall log:\n\u001b[2m  - Expect \"toHaveCount\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('todo-item')\u001b[22m\n\u001b[2m    8 × locator resolved to 3 elements\u001b[22m\n\u001b[2m      - unexpected value \"3\"\u001b[22m\n",
                         "stack": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nLocator: getByTestId('todo-item')\nExpected: \u001b[32m4\u001b[39m\nReceived: \u001b[31m3\u001b[39m\nCall log:\n\u001b[2m  - Expect \"toHaveCount\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('todo-item')\u001b[22m\n\u001b[2m    8 × locator resolved to 3 elements\u001b[22m\n\u001b[2m      - unexpected value \"3\"\u001b[22m\n\n    at C:\\Projects\\bbd playwright\\tests\\tests-examples\\demo-todo-app.spec.ts:452:53",
@@ -3016,7 +3169,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-13T07:27:50.389Z",
+                      "startTime": "2025-07-14T11:43:07.438Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -3032,13 +3185,13 @@
                       }
                     },
                     {
-                      "workerIndex": 10,
-                      "parallelIndex": 1,
+                      "workerIndex": 16,
+                      "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 8606,
+                      "duration": 10253,
                       "error": {
-                        "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nLocator: getByTestId('todo-item')\nExpected: \u001b[32m4\u001b[39m\nReceived: \u001b[31m3\u001b[39m\nCall log:\n\u001b[2m  - Expect \"toHaveCount\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('todo-item')\u001b[22m\n\u001b[2m    9 × locator resolved to 3 elements\u001b[22m\n\u001b[2m      - unexpected value \"3\"\u001b[22m\n",
-                        "stack": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nLocator: getByTestId('todo-item')\nExpected: \u001b[32m4\u001b[39m\nReceived: \u001b[31m3\u001b[39m\nCall log:\n\u001b[2m  - Expect \"toHaveCount\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('todo-item')\u001b[22m\n\u001b[2m    9 × locator resolved to 3 elements\u001b[22m\n\u001b[2m      - unexpected value \"3\"\u001b[22m\n\n    at C:\\Projects\\bbd playwright\\tests\\tests-examples\\demo-todo-app.spec.ts:452:53",
+                        "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nLocator: getByTestId('todo-item')\nExpected: \u001b[32m4\u001b[39m\nReceived: \u001b[31m3\u001b[39m\nCall log:\n\u001b[2m  - Expect \"toHaveCount\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('todo-item')\u001b[22m\n\u001b[2m    8 × locator resolved to 3 elements\u001b[22m\n\u001b[2m      - unexpected value \"3\"\u001b[22m\n",
+                        "stack": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nLocator: getByTestId('todo-item')\nExpected: \u001b[32m4\u001b[39m\nReceived: \u001b[31m3\u001b[39m\nCall log:\n\u001b[2m  - Expect \"toHaveCount\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('todo-item')\u001b[22m\n\u001b[2m    8 × locator resolved to 3 elements\u001b[22m\n\u001b[2m      - unexpected value \"3\"\u001b[22m\n\n    at C:\\Projects\\bbd playwright\\tests\\tests-examples\\demo-todo-app.spec.ts:452:53",
                         "location": {
                           "file": "C:\\Projects\\bbd playwright\\tests\\tests-examples\\demo-todo-app.spec.ts",
                           "column": 53,
@@ -3053,13 +3206,13 @@
                             "column": 53,
                             "line": 452
                           },
-                          "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nLocator: getByTestId('todo-item')\nExpected: \u001b[32m4\u001b[39m\nReceived: \u001b[31m3\u001b[39m\nCall log:\n\u001b[2m  - Expect \"toHaveCount\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('todo-item')\u001b[22m\n\u001b[2m    9 × locator resolved to 3 elements\u001b[22m\n\u001b[2m      - unexpected value \"3\"\u001b[22m\n\n\n\u001b[0m \u001b[90m 450 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByRole(\u001b[32m\"link\"\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m\"Completed\"\u001b[39m })\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 451 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByRole(\u001b[32m\"link\"\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m\"All\"\u001b[39m })\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 452 |\u001b[39m         \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByTestId(\u001b[32m\"todo-item\"\u001b[39m))\u001b[33m.\u001b[39mtoHaveCount(\u001b[35m4\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 453 |\u001b[39m     })\u001b[33m;\u001b[39m\n \u001b[90m 454 |\u001b[39m\n \u001b[90m 455 |\u001b[39m     test\u001b[33m.\u001b[39mskip(\u001b[32m\"should highlight the currently applied filter\"\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({\u001b[0m\n\u001b[2m    at C:\\Projects\\bbd playwright\\tests\\tests-examples\\demo-todo-app.spec.ts:452:53\u001b[22m"
+                          "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nLocator: getByTestId('todo-item')\nExpected: \u001b[32m4\u001b[39m\nReceived: \u001b[31m3\u001b[39m\nCall log:\n\u001b[2m  - Expect \"toHaveCount\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('todo-item')\u001b[22m\n\u001b[2m    8 × locator resolved to 3 elements\u001b[22m\n\u001b[2m      - unexpected value \"3\"\u001b[22m\n\n\n\u001b[0m \u001b[90m 450 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByRole(\u001b[32m\"link\"\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m\"Completed\"\u001b[39m })\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 451 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByRole(\u001b[32m\"link\"\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m\"All\"\u001b[39m })\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 452 |\u001b[39m         \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByTestId(\u001b[32m\"todo-item\"\u001b[39m))\u001b[33m.\u001b[39mtoHaveCount(\u001b[35m4\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 453 |\u001b[39m     })\u001b[33m;\u001b[39m\n \u001b[90m 454 |\u001b[39m\n \u001b[90m 455 |\u001b[39m     test\u001b[33m.\u001b[39mskip(\u001b[32m\"should highlight the currently applied filter\"\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({\u001b[0m\n\u001b[2m    at C:\\Projects\\bbd playwright\\tests\\tests-examples\\demo-todo-app.spec.ts:452:53\u001b[22m"
                         }
                       ],
                       "stdout": [],
                       "stderr": [],
                       "retry": 1,
-                      "startTime": "2025-07-13T07:27:58.474Z",
+                      "startTime": "2025-07-14T11:43:16.735Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -3118,7 +3271,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-13T07:27:52.040Z",
+                      "startTime": "2025-07-14T11:43:09.830Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -3161,15 +3314,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 1,
-                      "parallelIndex": 1,
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 605,
+                      "duration": 736,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-13T07:27:08.369Z",
+                      "startTime": "2025-07-14T11:41:53.138Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -3195,15 +3348,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 0,
-                      "parallelIndex": 0,
+                      "workerIndex": 3,
+                      "parallelIndex": 3,
                       "status": "passed",
-                      "duration": 536,
+                      "duration": 606,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-13T07:27:08.849Z",
+                      "startTime": "2025-07-14T11:41:53.366Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -3229,15 +3382,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 3,
-                      "parallelIndex": 3,
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 563,
+                      "duration": 794,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-13T07:27:08.971Z",
+                      "startTime": "2025-07-14T11:41:53.887Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -3263,15 +3416,15 @@
                   "projectName": "firefox",
                   "results": [
                     {
-                      "workerIndex": 4,
-                      "parallelIndex": 0,
+                      "workerIndex": 6,
+                      "parallelIndex": 3,
                       "status": "passed",
-                      "duration": 1410,
+                      "duration": 2320,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-13T07:27:27.203Z",
+                      "startTime": "2025-07-14T11:42:30.817Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -3297,15 +3450,15 @@
                   "projectName": "firefox",
                   "results": [
                     {
-                      "workerIndex": 6,
+                      "workerIndex": 10,
                       "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 1118,
+                      "duration": 2014,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-13T07:27:27.325Z",
+                      "startTime": "2025-07-14T11:42:32.938Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -3332,14 +3485,14 @@
                   "results": [
                     {
                       "workerIndex": 6,
-                      "parallelIndex": 1,
+                      "parallelIndex": 3,
                       "status": "passed",
-                      "duration": 1317,
+                      "duration": 1764,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-13T07:27:28.467Z",
+                      "startTime": "2025-07-14T11:42:33.160Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -3365,15 +3518,15 @@
                   "projectName": "webkit",
                   "results": [
                     {
-                      "workerIndex": 9,
-                      "parallelIndex": 0,
+                      "workerIndex": 15,
+                      "parallelIndex": 3,
                       "status": "passed",
-                      "duration": 1070,
+                      "duration": 1683,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-13T07:27:52.053Z",
+                      "startTime": "2025-07-14T11:43:09.837Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -3399,15 +3552,15 @@
                   "projectName": "webkit",
                   "results": [
                     {
-                      "workerIndex": 10,
-                      "parallelIndex": 1,
+                      "workerIndex": 16,
+                      "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 938,
+                      "duration": 1395,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-13T07:27:52.596Z",
+                      "startTime": "2025-07-14T11:43:10.710Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -3434,14 +3587,14 @@
                   "results": [
                     {
                       "workerIndex": 13,
-                      "parallelIndex": 3,
+                      "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 1343,
+                      "duration": 2018,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-13T07:27:52.621Z",
+                      "startTime": "2025-07-14T11:43:10.798Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -3475,15 +3628,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 1,
-                      "parallelIndex": 1,
+                      "workerIndex": 3,
+                      "parallelIndex": 3,
                       "status": "passed",
-                      "duration": 697,
+                      "duration": 930,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-13T07:27:08.985Z",
+                      "startTime": "2025-07-14T11:41:53.983Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -3509,15 +3662,15 @@
                   "projectName": "firefox",
                   "results": [
                     {
-                      "workerIndex": 4,
-                      "parallelIndex": 0,
+                      "workerIndex": 9,
+                      "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 1256,
+                      "duration": 2630,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-13T07:27:28.623Z",
+                      "startTime": "2025-07-14T11:42:33.913Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -3543,15 +3696,15 @@
                   "projectName": "webkit",
                   "results": [
                     {
-                      "workerIndex": 9,
-                      "parallelIndex": 0,
+                      "workerIndex": 15,
+                      "parallelIndex": 3,
                       "status": "passed",
-                      "duration": 1724,
+                      "duration": 2671,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-13T07:27:53.133Z",
+                      "startTime": "2025-07-14T11:43:11.530Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -3571,11 +3724,11 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-07-13T07:26:59.284Z",
-    "duration": 67929.073,
-    "expected": 84,
+    "startTime": "2025-07-14T11:41:43.074Z",
+    "duration": 104080.812,
+    "expected": 81,
     "skipped": 3,
     "unexpected": 3,
-    "flaky": 0
+    "flaky": 3
   }
 }

@@ -1,5 +1,6 @@
 {
     "compilerOptions": {
+        "jsx": "react-jsx",
         "target": "esnext",
         "module": "commonjs",
         "strict": true,
@@ -10,7 +11,7 @@
         "rootDir": ".",
         "moduleResolution": "node",
         "resolveJsonModule": true,
-        "types": ["node"]
+        "types": ["node", "react", "react-dom", "@playwright/test"]
     },
     "include": [
         "src",

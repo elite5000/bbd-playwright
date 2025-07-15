@@ -13,29 +13,11 @@ class CustomReporter implements Reporter {
     private results: any[] = [];
 
     onTestEnd(test: TestCase, result: TestResult) {
-        const { title, parent, location } = test;
-        const describe = parent.title;
-        const tag =
-            test.annotations.find((a) => a.type === "tag")?.description ||
-            "untagged";
-
-        const steps =
-            result.steps?.map((s) => ({
-                name: s.title,
-                status: s.error ? "failed" : "passed",
-            })) || [];
-
         this.results.push({
             id: this.results.length + 1,
-            tag,
-            describe,
-            fileLocation: location,
-            timeTakenMs: result.duration,
-            project: test.parent.project()?.name,
-            retries: result.retry,
-            title: title,
-            status: result.status,
-            steps,
+            testId: test.id,
+            test: test,
+            result: result,
         });
     }
 
@@ -44,6 +26,7 @@ class CustomReporter implements Reporter {
     async onEnd() {
         const endTime = Date.now();
         const output = {
+            reportTitle: "Playwright Test Report",
             tests: this.results,
             runEndDateTime: new Date(endTime).toISOString(),
             timeTakenMs: endTime - this.startTime,

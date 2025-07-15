@@ -3013,6 +3013,10 @@ body.dark-mode {
     color: var(--color-fg-muted)
 }
 
+.color-text-danger {
+    color: var(--color-danger-fg) !important;
+}
+
 .test-file-test-status-icon {
     flex: none
 }

@@ -1,9 +1,15 @@
 import React from "react";
 
-export default function SummaryBar({ counters, selected, onSelect }) {
+interface SummaryBarProps {
+  counters: Record<string, number>;
+  selected: string[];
+  onSelect: (key: string) => void;
+}
+
+export default function SummaryBar({ counters, selected, onSelect }: SummaryBarProps) {
   const filters = ["all", "passed", "failed", "flaky", "skipped"];
   return (
-    <div className="SummaryBar" style={{ display: "flex", flexDirection: "row", gap: 0, float: "center" }}>
+    <div className="SummaryBar" style={{ display: "flex", flexDirection: "row", gap: 0}}>
       {filters.map((key) => (
         <a
           key={key}

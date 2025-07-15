@@ -1,8 +1,13 @@
 import React, { useEffect, useRef } from "react";
 import Chart from "chart.js/auto";
+import { Counters } from "../models/counters";
 
-export default function PieChart({ counters }) {
-  const ref = useRef();
+interface PieChartProps {
+  counters: Counters
+}
+
+export default function PieChart({ counters }: PieChartProps) {
+  const ref = useRef<HTMLCanvasElement | null>(null);
   useEffect(() => {
     if (!ref.current) return;
     const chart = new Chart(ref.current, {

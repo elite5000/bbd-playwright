@@ -1,6 +1,11 @@
 import React from "react";
 
-export default function SearchBar({ value, onChange }) {
+interface SearchBarProps {
+  value: string;
+  onChange: (value: string) => void;
+}
+
+export default function SearchBar({ value, onChange }: SearchBarProps) {
   return (
     <form className="subnav-search SummaryBar-search" style={{ display: "flex", flexDirection: "row", width: "100%" }} onSubmit={e => e.preventDefault()}>
       <svg aria-hidden="true" height="16" viewBox="0 0 16 16" width="16" className="octicon subnav-search-icon">
@@ -10,10 +15,10 @@ export default function SearchBar({ value, onChange }) {
         id="search-box"
         className="form-control subnav-search-input input-contrast width-full"
         type="search"
-        placeholder="Search tests…"
+        placeholder="Search tests"
         value={value}
         onChange={e => onChange(e.target.value)}
-        style={{ flex: 1, marginLeft: 8 }}
+        style={{ flex: 1, marginLeft: 0 }}
       />
     </form>
   );
