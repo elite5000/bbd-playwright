@@ -30,7 +30,7 @@ const TestListItem: React.FC<TestListItemProps> = ({ test, onClick }) => {
           </span>
 
           <div title={test.testTitle} style={{ textDecoration: "none", color: "var(--color-fg-default)", cursor: "pointer" }}>
-            <span className="test-file-title">{test.testTitle}</span>
+            <span className="test-file-title"> Test: {test.testTitle}</span>
           </div>
           <div style={{ textDecoration: "none", color: "var(--color-fg-default)", cursor: "pointer" }}>
             <span className="label label-color-1" style={{ margin: "6px 0px 0px 6px" }}>{test.projectName}</span>
@@ -41,7 +41,7 @@ const TestListItem: React.FC<TestListItemProps> = ({ test, onClick }) => {
       </div>
       <div className="test-file-details-row">
         <div title={test.testTitle} className="test-file-path-link" style={{ textDecoration: "none", color: "var(--color-fg-default)", cursor: "pointer" }}>
-          <span className="test-file-path">{test.suite.file}:{test.test.line}</span>
+          <span className="test-file-path">{test.file.file}:{test.project.line}</span>
         </div>
       </div>
     </div>

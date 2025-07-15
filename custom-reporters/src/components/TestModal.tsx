@@ -55,7 +55,7 @@ const TestModal: React.FC<TestModalProps> = ({ open, test, allAttempts = [], onC
     <dialog open={open} style={{ zIndex: 10 }}>
       <article style={{ minWidth: "70vw" }}>
         <header style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-          <h2>{(current.parentTitle || "") + "  " + (current.test?.title || "")}</h2>
+          <h2>{(current.describeTitle || "") + "  " + (current.project?.title || "")}</h2>
           <button onClick={onClose}>✕</button>
         </header>
         <nav style={{ display: "flex", gap: 8, marginBottom: 12 }}>

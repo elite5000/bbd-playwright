@@ -1,8 +1,8 @@
-import { test, expect } from '@playwright/test';
-import { flattenPlaywrightReport } from '../utils/flattenPlaywrightReport';
-import { PlaywrightJsonReport } from '../models/jsonReport';
+import { test, expect } from "@playwright/test";
+import { flattenPlaywrightReport } from "../utils/flattenPlaywrightReport";
+import { PlaywrightJsonReport } from "../models/jsonReport";
 
-test('flattenPlaywrightReport should flatten a nested PlaywrightJsonReport into a flat array of test attempts', () => {
+test("flattenPlaywrightReport should flatten a nested PlaywrightJsonReport into a flat array of test attempts", () => {
     test("should flatten a nested PlaywrightJsonReport into a flat array of test attempts", () => {
         const mockReport: PlaywrightJsonReport = {
             config: {},
@@ -27,14 +27,8 @@ test('flattenPlaywrightReport should flatten a nested PlaywrightJsonReport into 
                                             parallelIndex: 0,
                                             status: "passed",
                                             duration: 123,
-                                            errors: [],
-                                            stdout: [],
-                                            stderr: [],
+                                            error: [],
                                             retry: 0,
-                                            startTime:
-                                                "2025-07-15T00:00:00.000Z",
-                                            annotations: [],
-                                            attachments: [],
                                         },
                                     ],
                                     status: "passed",

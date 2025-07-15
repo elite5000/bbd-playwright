@@ -1,2 +1,445 @@
-<testsuites id="" name="" tests="0" failures="0" skipped="0" errors="0" time="0.024511999999999944">
+<testsuites id="" name="" tests="90" failures="3" skipped="3" errors="0" time="78.5115">
+<testsuite name="example.spec.ts" timestamp="2025-07-15T09:48:49.027Z" hostname="chromium" tests="2" failures="0" skipped="0" time="12.421" errors="0">
+<testcase name="has title" classname="example.spec.ts" time="6.51">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\example-has-title-chromium-retry1\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="get started link" classname="example.spec.ts" time="5.911">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\example-get-started-link-chromium-retry1\trace.zip]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="tests-examples\demo-todo-app.spec.ts" timestamp="2025-07-15T09:48:49.027Z" hostname="chromium" tests="24" failures="1" skipped="1" time="35.781" errors="0">
+<testcase name="New Todo › should allow me to add todo items" classname="tests-examples\demo-todo-app.spec.ts" time="4.526">
+</testcase>
+<testcase name="New Todo › should clear text input field when an item is added" classname="tests-examples\demo-todo-app.spec.ts" time="4.447">
+</testcase>
+<testcase name="New Todo › should append new items to the bottom of the list" classname="tests-examples\demo-todo-app.spec.ts" time="0.654">
+</testcase>
+<testcase name="Mark all as completed › should allow me to mark all items as completed" classname="tests-examples\demo-todo-app.spec.ts" time="0.685">
+</testcase>
+<testcase name="Mark all as completed › should allow me to clear the complete state of all items" classname="tests-examples\demo-todo-app.spec.ts" time="0.675">
+</testcase>
+<testcase name="Mark all as completed › complete all checkbox should update state when items are completed / cleared" classname="tests-examples\demo-todo-app.spec.ts" time="0.777">
+</testcase>
+<testcase name="Item › should allow me to mark items as complete" classname="tests-examples\demo-todo-app.spec.ts" time="0.577">
+</testcase>
+<testcase name="Item › should allow me to un-mark items as complete" classname="tests-examples\demo-todo-app.spec.ts" time="0.586">
+</testcase>
+<testcase name="Item › should allow me to edit an item" classname="tests-examples\demo-todo-app.spec.ts" time="0.632">
+</testcase>
+<testcase name="Editing › should hide other controls when editing" classname="tests-examples\demo-todo-app.spec.ts" time="0.797">
+</testcase>
+<testcase name="Editing › should save edits on blur" classname="tests-examples\demo-todo-app.spec.ts" time="0.856">
+</testcase>
+<testcase name="Editing › should trim entered text" classname="tests-examples\demo-todo-app.spec.ts" time="0.761">
+</testcase>
+<testcase name="Editing › should remove the item if an empty text string was entered" classname="tests-examples\demo-todo-app.spec.ts" time="0.763">
+</testcase>
+<testcase name="Editing › should cancel edits on escape" classname="tests-examples\demo-todo-app.spec.ts" time="0.725">
+</testcase>
+<testcase name="Counter › should display the current number of todo items" classname="tests-examples\demo-todo-app.spec.ts" time="0.578">
+</testcase>
+<testcase name="Clear completed button › should display the correct text" classname="tests-examples\demo-todo-app.spec.ts" time="0.595">
+</testcase>
+<testcase name="Clear completed button › should remove completed items when clicked" classname="tests-examples\demo-todo-app.spec.ts" time="0.698">
+</testcase>
+<testcase name="Clear completed button › should be hidden when there are no items that are completed" classname="tests-examples\demo-todo-app.spec.ts" time="0.726">
+</testcase>
+<testcase name="Persistence › should persist its data" classname="tests-examples\demo-todo-app.spec.ts" time="0.736">
+</testcase>
+<testcase name="Routing › should allow me to display active items" classname="tests-examples\demo-todo-app.spec.ts" time="0.66">
+</testcase>
+<testcase name="Routing › should respect the back button" classname="tests-examples\demo-todo-app.spec.ts" time="0.884">
+</testcase>
+<testcase name="Routing › should allow me to display completed items" classname="tests-examples\demo-todo-app.spec.ts" time="0.698">
+</testcase>
+<testcase name="Routing › should allow me to display all items" classname="tests-examples\demo-todo-app.spec.ts" time="12.745">
+<failure message="demo-todo-app.spec.ts:442:9 should allow me to display all items" type="FAILURE">
+<![CDATA[  [chromium] › tests-examples\demo-todo-app.spec.ts:442:9 › Routing › should allow me to display all items 
+
+    Error: Timed out 5000ms waiting for expect(locator).toHaveCount(expected)
+
+    Locator: getByTestId('todo-item')
+    Expected: 4
+    Received: 3
+    Call log:
+      - Expect "toHaveCount" with timeout 5000ms
+      - waiting for getByTestId('todo-item')
+        9 × locator resolved to 3 elements
+          - unexpected value "3"
+
+
+      450 |         await page.getByRole("link", { name: "Completed" }).click();
+      451 |         await page.getByRole("link", { name: "All" }).click();
+    > 452 |         await expect(page.getByTestId("todo-item")).toHaveCount(4);
+          |                                                     ^
+      453 |     });
+      454 |
+      455 |     test.skip("should highlight the currently applied filter", async ({
+        at C:\Projects\bbd playwright\tests\tests-examples\demo-todo-app.spec.ts:452:53
+
+    Error Context: ..\test-results\tests-examples-demo-todo-a-4b396-low-me-to-display-all-items-chromium\error-context.md
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Error: Timed out 5000ms waiting for expect(locator).toHaveCount(expected)
+
+    Locator: getByTestId('todo-item')
+    Expected: 4
+    Received: 3
+    Call log:
+      - Expect "toHaveCount" with timeout 5000ms
+      - waiting for getByTestId('todo-item')
+        9 × locator resolved to 3 elements
+          - unexpected value "3"
+
+
+      450 |         await page.getByRole("link", { name: "Completed" }).click();
+      451 |         await page.getByRole("link", { name: "All" }).click();
+    > 452 |         await expect(page.getByTestId("todo-item")).toHaveCount(4);
+          |                                                     ^
+      453 |     });
+      454 |
+      455 |     test.skip("should highlight the currently applied filter", async ({
+        at C:\Projects\bbd playwright\tests\tests-examples\demo-todo-app.spec.ts:452:53
+
+    Error Context: ..\test-results\tests-examples-demo-todo-a-4b396-low-me-to-display-all-items-chromium-retry1\error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\test-results\tests-examples-demo-todo-a-4b396-low-me-to-display-all-items-chromium-retry1\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\test-results\tests-examples-demo-todo-a-4b396-low-me-to-display-all-items-chromium-retry1\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\tests-examples-demo-todo-a-4b396-low-me-to-display-all-items-chromium\error-context.md]]
+
+[[ATTACHMENT|test-results\tests-examples-demo-todo-a-4b396-low-me-to-display-all-items-chromium-retry1\error-context.md]]
+
+[[ATTACHMENT|test-results\tests-examples-demo-todo-a-4b396-low-me-to-display-all-items-chromium-retry1\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Routing › should highlight the currently applied filter" classname="tests-examples\demo-todo-app.spec.ts" time="0">
+<properties>
+<property name="skip" value="">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="tests-examples copy\demo-todo-app.spec.ts" timestamp="2025-07-15T09:48:49.027Z" hostname="chromium" tests="4" failures="0" skipped="0" time="2.281" errors="0">
+<testcase name="New Todo › I should allow me to add todo items" classname="tests-examples copy\demo-todo-app.spec.ts" time="0.602">
+</testcase>
+<testcase name="New Todo › I should clear text input field when an item is added" classname="tests-examples copy\demo-todo-app.spec.ts" time="0.566">
+</testcase>
+<testcase name="New Todo › should append new items to the bottom of the list" classname="tests-examples copy\demo-todo-app.spec.ts" time="0.561">
+</testcase>
+<testcase name="Mark all as completed › should allow me to mark all items as completed" classname="tests-examples copy\demo-todo-app.spec.ts" time="0.552">
+</testcase>
+</testsuite>
+<testsuite name="example.spec.ts" timestamp="2025-07-15T09:48:49.027Z" hostname="firefox" tests="2" failures="0" skipped="0" time="15.294" errors="0">
+<testcase name="has title" classname="example.spec.ts" time="11.861">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\example-has-title-firefox-retry1\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="get started link" classname="example.spec.ts" time="3.433">
+</testcase>
+</testsuite>
+<testsuite name="tests-examples\demo-todo-app.spec.ts" timestamp="2025-07-15T09:48:49.027Z" hostname="firefox" tests="24" failures="1" skipped="1" time="59.054" errors="0">
+<testcase name="New Todo › should allow me to add todo items" classname="tests-examples\demo-todo-app.spec.ts" time="3.724">
+</testcase>
+<testcase name="New Todo › should clear text input field when an item is added" classname="tests-examples\demo-todo-app.spec.ts" time="1.251">
+</testcase>
+<testcase name="New Todo › should append new items to the bottom of the list" classname="tests-examples\demo-todo-app.spec.ts" time="2.326">
+</testcase>
+<testcase name="Mark all as completed › should allow me to mark all items as completed" classname="tests-examples\demo-todo-app.spec.ts" time="2.339">
+</testcase>
+<testcase name="Mark all as completed › should allow me to clear the complete state of all items" classname="tests-examples\demo-todo-app.spec.ts" time="2.123">
+</testcase>
+<testcase name="Mark all as completed › complete all checkbox should update state when items are completed / cleared" classname="tests-examples\demo-todo-app.spec.ts" time="2.083">
+</testcase>
+<testcase name="Item › should allow me to mark items as complete" classname="tests-examples\demo-todo-app.spec.ts" time="1.116">
+</testcase>
+<testcase name="Item › should allow me to un-mark items as complete" classname="tests-examples\demo-todo-app.spec.ts" time="1.098">
+</testcase>
+<testcase name="Item › should allow me to edit an item" classname="tests-examples\demo-todo-app.spec.ts" time="1.329">
+</testcase>
+<testcase name="Editing › should hide other controls when editing" classname="tests-examples\demo-todo-app.spec.ts" time="1.159">
+</testcase>
+<testcase name="Editing › should save edits on blur" classname="tests-examples\demo-todo-app.spec.ts" time="1.589">
+</testcase>
+<testcase name="Editing › should trim entered text" classname="tests-examples\demo-todo-app.spec.ts" time="1.733">
+</testcase>
+<testcase name="Editing › should remove the item if an empty text string was entered" classname="tests-examples\demo-todo-app.spec.ts" time="1.383">
+</testcase>
+<testcase name="Editing › should cancel edits on escape" classname="tests-examples\demo-todo-app.spec.ts" time="1.649">
+</testcase>
+<testcase name="Counter › should display the current number of todo items" classname="tests-examples\demo-todo-app.spec.ts" time="1.383">
+</testcase>
+<testcase name="Clear completed button › should display the correct text" classname="tests-examples\demo-todo-app.spec.ts" time="4.216">
+</testcase>
+<testcase name="Clear completed button › should remove completed items when clicked" classname="tests-examples\demo-todo-app.spec.ts" time="1.414">
+</testcase>
+<testcase name="Clear completed button › should be hidden when there are no items that are completed" classname="tests-examples\demo-todo-app.spec.ts" time="1.356">
+</testcase>
+<testcase name="Persistence › should persist its data" classname="tests-examples\demo-todo-app.spec.ts" time="2.86">
+</testcase>
+<testcase name="Routing › should allow me to display active items" classname="tests-examples\demo-todo-app.spec.ts" time="1.427">
+</testcase>
+<testcase name="Routing › should respect the back button" classname="tests-examples\demo-todo-app.spec.ts" time="2.51">
+</testcase>
+<testcase name="Routing › should allow me to display completed items" classname="tests-examples\demo-todo-app.spec.ts" time="1.819">
+</testcase>
+<testcase name="Routing › should allow me to display all items" classname="tests-examples\demo-todo-app.spec.ts" time="17.167">
+<failure message="demo-todo-app.spec.ts:442:9 should allow me to display all items" type="FAILURE">
+<![CDATA[  [firefox] › tests-examples\demo-todo-app.spec.ts:442:9 › Routing › should allow me to display all items 
+
+    Error: Timed out 5000ms waiting for expect(locator).toHaveCount(expected)
+
+    Locator: getByTestId('todo-item')
+    Expected: 4
+    Received: 3
+    Call log:
+      - Expect "toHaveCount" with timeout 5000ms
+      - waiting for getByTestId('todo-item')
+        9 × locator resolved to 3 elements
+          - unexpected value "3"
+
+
+      450 |         await page.getByRole("link", { name: "Completed" }).click();
+      451 |         await page.getByRole("link", { name: "All" }).click();
+    > 452 |         await expect(page.getByTestId("todo-item")).toHaveCount(4);
+          |                                                     ^
+      453 |     });
+      454 |
+      455 |     test.skip("should highlight the currently applied filter", async ({
+        at C:\Projects\bbd playwright\tests\tests-examples\demo-todo-app.spec.ts:452:53
+
+    Error Context: ..\test-results\tests-examples-demo-todo-a-4b396-low-me-to-display-all-items-firefox\error-context.md
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Error: Timed out 5000ms waiting for expect(locator).toHaveCount(expected)
+
+    Locator: getByTestId('todo-item')
+    Expected: 4
+    Received: 3
+    Call log:
+      - Expect "toHaveCount" with timeout 5000ms
+      - waiting for getByTestId('todo-item')
+        9 × locator resolved to 3 elements
+          - unexpected value "3"
+
+
+      450 |         await page.getByRole("link", { name: "Completed" }).click();
+      451 |         await page.getByRole("link", { name: "All" }).click();
+    > 452 |         await expect(page.getByTestId("todo-item")).toHaveCount(4);
+          |                                                     ^
+      453 |     });
+      454 |
+      455 |     test.skip("should highlight the currently applied filter", async ({
+        at C:\Projects\bbd playwright\tests\tests-examples\demo-todo-app.spec.ts:452:53
+
+    Error Context: ..\test-results\tests-examples-demo-todo-a-4b396-low-me-to-display-all-items-firefox-retry1\error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\test-results\tests-examples-demo-todo-a-4b396-low-me-to-display-all-items-firefox-retry1\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\test-results\tests-examples-demo-todo-a-4b396-low-me-to-display-all-items-firefox-retry1\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\tests-examples-demo-todo-a-4b396-low-me-to-display-all-items-firefox\error-context.md]]
+
+[[ATTACHMENT|test-results\tests-examples-demo-todo-a-4b396-low-me-to-display-all-items-firefox-retry1\error-context.md]]
+
+[[ATTACHMENT|test-results\tests-examples-demo-todo-a-4b396-low-me-to-display-all-items-firefox-retry1\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Routing › should highlight the currently applied filter" classname="tests-examples\demo-todo-app.spec.ts" time="0">
+<properties>
+<property name="skip" value="">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="tests-examples copy\demo-todo-app.spec.ts" timestamp="2025-07-15T09:48:49.027Z" hostname="firefox" tests="4" failures="0" skipped="0" time="6.079" errors="0">
+<testcase name="New Todo › I should allow me to add todo items" classname="tests-examples copy\demo-todo-app.spec.ts" time="1.628">
+</testcase>
+<testcase name="New Todo › I should clear text input field when an item is added" classname="tests-examples copy\demo-todo-app.spec.ts" time="1.324">
+</testcase>
+<testcase name="New Todo › should append new items to the bottom of the list" classname="tests-examples copy\demo-todo-app.spec.ts" time="1.461">
+</testcase>
+<testcase name="Mark all as completed › should allow me to mark all items as completed" classname="tests-examples copy\demo-todo-app.spec.ts" time="1.666">
+</testcase>
+</testsuite>
+<testsuite name="example.spec.ts" timestamp="2025-07-15T09:48:49.027Z" hostname="webkit" tests="2" failures="0" skipped="0" time="9.473" errors="0">
+<testcase name="has title" classname="example.spec.ts" time="7.463">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\example-has-title-webkit-retry1\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="get started link" classname="example.spec.ts" time="2.01">
+</testcase>
+</testsuite>
+<testsuite name="tests-examples\demo-todo-app.spec.ts" timestamp="2025-07-15T09:48:49.027Z" hostname="webkit" tests="24" failures="1" skipped="1" time="70.33" errors="0">
+<testcase name="New Todo › should allow me to add todo items" classname="tests-examples\demo-todo-app.spec.ts" time="1.724">
+</testcase>
+<testcase name="New Todo › should clear text input field when an item is added" classname="tests-examples\demo-todo-app.spec.ts" time="1.07">
+</testcase>
+<testcase name="New Todo › should append new items to the bottom of the list" classname="tests-examples\demo-todo-app.spec.ts" time="1.704">
+</testcase>
+<testcase name="Mark all as completed › should allow me to mark all items as completed" classname="tests-examples\demo-todo-app.spec.ts" time="2.253">
+</testcase>
+<testcase name="Mark all as completed › should allow me to clear the complete state of all items" classname="tests-examples\demo-todo-app.spec.ts" time="3.156">
+</testcase>
+<testcase name="Mark all as completed › complete all checkbox should update state when items are completed / cleared" classname="tests-examples\demo-todo-app.spec.ts" time="4.644">
+</testcase>
+<testcase name="Item › should allow me to mark items as complete" classname="tests-examples\demo-todo-app.spec.ts" time="3.325">
+</testcase>
+<testcase name="Item › should allow me to un-mark items as complete" classname="tests-examples\demo-todo-app.spec.ts" time="2.729">
+</testcase>
+<testcase name="Item › should allow me to edit an item" classname="tests-examples\demo-todo-app.spec.ts" time="2.399">
+</testcase>
+<testcase name="Editing › should hide other controls when editing" classname="tests-examples\demo-todo-app.spec.ts" time="1.697">
+</testcase>
+<testcase name="Editing › should save edits on blur" classname="tests-examples\demo-todo-app.spec.ts" time="1.693">
+</testcase>
+<testcase name="Editing › should trim entered text" classname="tests-examples\demo-todo-app.spec.ts" time="2.169">
+</testcase>
+<testcase name="Editing › should remove the item if an empty text string was entered" classname="tests-examples\demo-todo-app.spec.ts" time="1.86">
+</testcase>
+<testcase name="Editing › should cancel edits on escape" classname="tests-examples\demo-todo-app.spec.ts" time="2.806">
+</testcase>
+<testcase name="Counter › should display the current number of todo items" classname="tests-examples\demo-todo-app.spec.ts" time="1.295">
+</testcase>
+<testcase name="Clear completed button › should display the correct text" classname="tests-examples\demo-todo-app.spec.ts" time="2.29">
+</testcase>
+<testcase name="Clear completed button › should remove completed items when clicked" classname="tests-examples\demo-todo-app.spec.ts" time="2.816">
+</testcase>
+<testcase name="Clear completed button › should be hidden when there are no items that are completed" classname="tests-examples\demo-todo-app.spec.ts" time="2.665">
+</testcase>
+<testcase name="Persistence › should persist its data" classname="tests-examples\demo-todo-app.spec.ts" time="2.223">
+</testcase>
+<testcase name="Routing › should allow me to display active items" classname="tests-examples\demo-todo-app.spec.ts" time="2.627">
+</testcase>
+<testcase name="Routing › should respect the back button" classname="tests-examples\demo-todo-app.spec.ts" time="3.536">
+</testcase>
+<testcase name="Routing › should allow me to display completed items" classname="tests-examples\demo-todo-app.spec.ts" time="2.649">
+</testcase>
+<testcase name="Routing › should allow me to display all items" classname="tests-examples\demo-todo-app.spec.ts" time="17">
+<failure message="demo-todo-app.spec.ts:442:9 should allow me to display all items" type="FAILURE">
+<![CDATA[  [webkit] › tests-examples\demo-todo-app.spec.ts:442:9 › Routing › should allow me to display all items 
+
+    Error: Timed out 5000ms waiting for expect(locator).toHaveCount(expected)
+
+    Locator: getByTestId('todo-item')
+    Expected: 4
+    Received: 3
+    Call log:
+      - Expect "toHaveCount" with timeout 5000ms
+      - waiting for getByTestId('todo-item')
+        8 × locator resolved to 3 elements
+          - unexpected value "3"
+
+
+      450 |         await page.getByRole("link", { name: "Completed" }).click();
+      451 |         await page.getByRole("link", { name: "All" }).click();
+    > 452 |         await expect(page.getByTestId("todo-item")).toHaveCount(4);
+          |                                                     ^
+      453 |     });
+      454 |
+      455 |     test.skip("should highlight the currently applied filter", async ({
+        at C:\Projects\bbd playwright\tests\tests-examples\demo-todo-app.spec.ts:452:53
+
+    Error Context: ..\test-results\tests-examples-demo-todo-a-4b396-low-me-to-display-all-items-webkit\error-context.md
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Error: Timed out 5000ms waiting for expect(locator).toHaveCount(expected)
+
+    Locator: getByTestId('todo-item')
+    Expected: 4
+    Received: 3
+    Call log:
+      - Expect "toHaveCount" with timeout 5000ms
+      - waiting for getByTestId('todo-item')
+        8 × locator resolved to 3 elements
+          - unexpected value "3"
+
+
+      450 |         await page.getByRole("link", { name: "Completed" }).click();
+      451 |         await page.getByRole("link", { name: "All" }).click();
+    > 452 |         await expect(page.getByTestId("todo-item")).toHaveCount(4);
+          |                                                     ^
+      453 |     });
+      454 |
+      455 |     test.skip("should highlight the currently applied filter", async ({
+        at C:\Projects\bbd playwright\tests\tests-examples\demo-todo-app.spec.ts:452:53
+
+    Error Context: ..\test-results\tests-examples-demo-todo-a-4b396-low-me-to-display-all-items-webkit-retry1\error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\test-results\tests-examples-demo-todo-a-4b396-low-me-to-display-all-items-webkit-retry1\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\test-results\tests-examples-demo-todo-a-4b396-low-me-to-display-all-items-webkit-retry1\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\tests-examples-demo-todo-a-4b396-low-me-to-display-all-items-webkit\error-context.md]]
+
+[[ATTACHMENT|test-results\tests-examples-demo-todo-a-4b396-low-me-to-display-all-items-webkit-retry1\error-context.md]]
+
+[[ATTACHMENT|test-results\tests-examples-demo-todo-a-4b396-low-me-to-display-all-items-webkit-retry1\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Routing › should highlight the currently applied filter" classname="tests-examples\demo-todo-app.spec.ts" time="0">
+<properties>
+<property name="skip" value="">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="tests-examples copy\demo-todo-app.spec.ts" timestamp="2025-07-15T09:48:49.027Z" hostname="webkit" tests="4" failures="0" skipped="0" time="5.971" errors="0">
+<testcase name="New Todo › I should allow me to add todo items" classname="tests-examples copy\demo-todo-app.spec.ts" time="1.262">
+</testcase>
+<testcase name="New Todo › I should clear text input field when an item is added" classname="tests-examples copy\demo-todo-app.spec.ts" time="0.998">
+</testcase>
+<testcase name="New Todo › should append new items to the bottom of the list" classname="tests-examples copy\demo-todo-app.spec.ts" time="1.44">
+</testcase>
+<testcase name="Mark all as completed › should allow me to mark all items as completed" classname="tests-examples copy\demo-todo-app.spec.ts" time="2.271">
+</testcase>
+</testsuite>
 </testsuites>

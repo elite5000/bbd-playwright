@@ -26,31 +26,22 @@ const App: React.FC = () => {
       .then((res) => res.json())
       .then((data) => {
         setReportData(data);
-        setFlatTests(flattenPlaywrightReport(data));
+        const flat = flattenPlaywrightReport(data);
+        console.log("flattened", flat);
+        setFlatTests(flat);
       });
   }, []);
 
   // Compute counters using deduped/flaky logic (same as TestTree)
   const counters: Counters = useMemo(() => {
-    // Group by testId and take the last retry for each
-    const allAttemptsByTestId: Record<string, FlatTest[]> = {};
-    flatTests.forEach((t) => {
-      const key = t.testId;
-      if (!allAttemptsByTestId[key]) allAttemptsByTestId[key] = [];
-      allAttemptsByTestId[key].push(t);
-    });
-    const lastAttemptByTestId: Record<string, FlatTest> = {};
-    Object.keys(allAttemptsByTestId).forEach((testId) => {
-      const attempts = allAttemptsByTestId[testId];
-      const sorted = attempts.slice().sort((a, b) => a.retry - b.retry);
-      lastAttemptByTestId[testId] = sorted[sorted.length - 1];
-    });
     const c: Counters = { all: 0, passed: 0, failed: 0, flaky: 0, skipped: 0 };
-    Object.values(lastAttemptByTestId).forEach((t) => {
+    Object.values(flatTests).forEach((t) => {
       if (t.status === "flaky") {
         c.flaky++;
-      } else if (t.status === "passed" || t.status === "failed" || t.status === "skipped") {
-        c[t.status]++;
+      } else if (t.status === "expected") {
+        c.passed++;
+      } else if (t.status === "skipped") {
+        c.skipped++;
       } else {
         c.failed++;
       }
@@ -61,9 +52,13 @@ const App: React.FC = () => {
 
   // Get all unique tags
   const tags = useMemo(() => {
-    return [
-      ...new Set(flatTests.flatMap((t) => t.spec.tags ?? ["untagged"]))
-    ].sort();
+    const tagSet = new Set<string>();
+    flatTests.forEach((t) => {
+      // Use "untagged" if t.spec.tags is missing or empty
+      const theseTags = t.test.tags && t.test.tags.length ? t.test.tags : ["untagged"];
+      theseTags.forEach((tag) => tagSet.add(tag));
+    });
+    return Array.from(tagSet).sort();
   }, [flatTests]);
 
   // Modal open handler (for test details)
