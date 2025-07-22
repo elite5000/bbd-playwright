@@ -1,26 +1,24 @@
 import React, { useState } from "react";
 import TestListItem from "./test-list-item";
 import { FlatTest } from "../utils/flattenPlaywrightReport";
+import { getTestOutcome } from "../utils/get-outcome";
 
 interface TestTreeProps {
   tests: FlatTest[];
-  tags: string[];
   selectedTags: string[];
   search: string;
   filter: string[];
   onTestClick: (test: FlatTest) => void;
 }
 
-type GroupedTests = Record<string, Record<string, FlatTest[]>>;
-
-const TestTree: React.FC<TestTreeProps> = ({ tests, filter, tags, selectedTags, search, onTestClick }) => {
+const TestTree: React.FC<TestTreeProps> = ({ tests, filter, selectedTags, search, onTestClick }) => {
   // 1. Build a map of all attempts for each testId
   const allAttemptsByTestId: Record<string, FlatTest[]> = {};
   tests.forEach((t) => {
     const key = t.testId;
     if (!allAttemptsByTestId[key]) allAttemptsByTestId[key] = [];
     allAttemptsByTestId[key].push(t);
-    console.log("FlatTest spec.tags:", t.test.tags, "spec.title:", t.test.title, "testTitle:", t.testTitle);
+    console.log("FlatTest spec.tags:", t.file.tags, "spec.title:", t.file.title, "testTitle:", t.testTitle);
   });
 
   // 2. Only keep the last attempt for each testId
@@ -29,9 +27,9 @@ const TestTree: React.FC<TestTreeProps> = ({ tests, filter, tags, selectedTags, 
   const flakyTestIds = new Set<string>();
   Object.keys(allAttemptsByTestId).forEach((testId) => {
     const attempts = allAttemptsByTestId[testId];
-    const sorted = attempts.slice().sort((a, b) => (a.result?.retry ?? 0) - (b.result?.retry ?? 0));
+    const sorted = attempts.slice().sort((a, b) => (a.result.retry) - (b.result.retry));
     const last = sorted[sorted.length - 1];
-    const wasRetried = sorted.length > 1 && last.status === "passed" && sorted.slice(0, -1).some(attempt => attempt.status !== "passed");
+    const wasRetried = sorted.length > 1;
     if (wasRetried) {
       flakyTestIds.add(testId);
     }
@@ -40,16 +38,17 @@ const TestTree: React.FC<TestTreeProps> = ({ tests, filter, tags, selectedTags, 
 
   // 3. Group only the last attempts for display and counts
   const grouped: Record<string, Record<string, FlatTest[]>> = {};
+
   Object.values(lastAttemptByTestId).forEach((t) => {
-    const testTags = t.test.tags.length === 0 ? ["untagged"] : t.test.tags;
+    const testTags = t.file.tags.length === 0 ? ["untagged"] : t.file.tags;
     testTags.forEach(tag => {
       if (selectedTags.length && !selectedTags.includes(tag)) return;
-      const effectiveStatus = flakyTestIds.has(t.testId) ? ["flaky", "passed"] : [t.status];
-      if (filter.length && !filter.includes("all") && !effectiveStatus.some(status => filter.includes(status))) return;
-      if (search && !(String(t.testTitle) + String(t.test.title)).toLowerCase().includes(search.toLowerCase())) return;
+      const outcome = getTestOutcome(t, tests);
+      if (filter.length && !filter.includes("all") && !filter.includes(outcome)) return;
+      if (search && !(String(t.testTitle) + String(t.file.title)).toLowerCase().includes(search.toLowerCase())) return;
       grouped[tag] = grouped[tag] || {};
-      grouped[tag][t.test.title ?? ""] = grouped[tag][t.test.title ?? ""] || [];
-      grouped[tag][t.test.title ?? ""].push(t);
+      grouped[tag][t.file.title ?? ""] = grouped[tag][t.file.title ?? ""] || [];
+      grouped[tag][t.file.title ?? ""].push(t);
     });
   });
 

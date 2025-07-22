@@ -41,32 +41,37 @@ export interface TestResult {
 
 interface TestModalProps {
   open: boolean;
-  test: FlatTest | null;
+  test: FlatTest;
   allAttempts?: FlatTest[];
   onClose: () => void;
 }
 
 const TestModal: React.FC<TestModalProps> = ({ open, test, allAttempts = [], onClose }) => {
+
   const [selectedIdx, setSelectedIdx] = useState<number>(allAttempts.length ? allAttempts.length - 1 : 0);
   if (!open || !test) return null;
   const attempts = allAttempts.length ? allAttempts : [test];
   const current = attempts[selectedIdx] || test;
+  const Color = attempts.map((a, i) => {
+    return a.test.results[i].status === "passed" && a.status === "flaky"? "#fbbd08" :  a.test.results[i].status === "failed" ? "#ff4136" : a.test.results[i].status === "passed" ? "#2ecc40":"#2ecc40";
+  });
   return (
     <dialog open={open} style={{ zIndex: 10 }}>
       <article style={{ minWidth: "70vw" }}>
         <header style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-          <h2>{(current.describeTitle || "") + "  " + (current.project?.title || "")}</h2>
+          <h2>{(current.describeTitle || "") + "  " + (current.projectName || "")}</h2>
           <button onClick={onClose}>✕</button>
         </header>
         <nav style={{ display: "flex", gap: 8, marginBottom: 12 }}>
           {attempts.map((a, i) => (
+                    
             <button
               key={i}
               style={{
                 fontWeight: i === selectedIdx ? "bold" : "normal",
-                borderBottom: i === selectedIdx ? "2px solid #fbbd08" : "none",
+                borderBottom: i === selectedIdx ? "2px solid " + Color[i] : "none",
                 background: "none",
-                color: a.result?.status === "passed" ? "#2ecc40" : a.result?.status === "failed" ? "#ff4136" : a.flakey ? "#fbbd08" : "#aaa",
+                color: Color[i],
                 cursor: "pointer",
                 padding: "2px 8px"
               }}

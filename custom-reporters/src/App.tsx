@@ -10,6 +10,7 @@ import TestInfo from "./components/test-info";
 import { Counters } from "./models/counters";
 import { PlaywrightJsonReport } from "./models/jsonReport";
 import { flattenPlaywrightReport, FlatTest } from "./utils/flattenPlaywrightReport";
+import { getTestOutcome } from "./utils/get-outcome";
 
 const App: React.FC = () => {
   const [reportData, setReportData] = useState<PlaywrightJsonReport | null>(null);
@@ -36,13 +37,14 @@ const App: React.FC = () => {
   const counters: Counters = useMemo(() => {
     const c: Counters = { all: 0, passed: 0, failed: 0, flaky: 0, skipped: 0 };
     Object.values(flatTests).forEach((t) => {
-      if (t.status === "flaky") {
+      const outcome = getTestOutcome(t, flatTests);
+      if (outcome === "flaky") {
         c.flaky++;
-      } else if (t.status === "expected") {
+      } else if (outcome === "passed") {
         c.passed++;
-      } else if (t.status === "skipped") {
+      } else if (outcome === "skipped") {
         c.skipped++;
-      } else {
+      } else if (outcome === "failed") {
         c.failed++;
       }
     });
@@ -55,7 +57,7 @@ const App: React.FC = () => {
     const tagSet = new Set<string>();
     flatTests.forEach((t) => {
       // Use "untagged" if t.spec.tags is missing or empty
-      const theseTags = t.test.tags && t.test.tags.length ? t.test.tags : ["untagged"];
+      const theseTags = t.file.tags && t.file.tags.length ? t.file.tags : ["untagged"];
       theseTags.forEach((tag) => tagSet.add(tag));
     });
     return Array.from(tagSet).sort();
@@ -121,7 +123,6 @@ const App: React.FC = () => {
         <TestTree
           tests={flatTests}
           filter={selectedFilters}
-          tags={tags}
           selectedTags={selectedTags}
           search={search}
           onTestClick={handleTestClick}

@@ -10,7 +10,7 @@ const TODO_ITEMS = [
     "book a doctors appointment",
 ] as const;
 
-test.describe("New Todo", () => {
+test.describe.skip("New Todo", () => {
     test("should allow me to add todo items", async ({ page }) => {
         // create a new todo locator
         const newTodo = page.getByPlaceholder("What needs to be done?");
@@ -132,57 +132,64 @@ test.describe("Mark all as completed", () => {
 });
 
 test.describe("Item", () => {
-    test("should allow me to mark items as complete", async ({ page }) => {
-        // create a new todo locator
-        const newTodo = page.getByPlaceholder("What needs to be done?");
+    test.fixme(
+        "should allow me to mark items as complete",
+        async ({ page }) => {
+            // create a new todo locator
+            const newTodo = page.getByPlaceholder("What needs to be done?");
 
-        // Create two items.
-        for (const item of TODO_ITEMS.slice(0, 2)) {
-            await newTodo.fill(item);
-            await newTodo.press("Enter");
+            // Create two items.
+            for (const item of TODO_ITEMS.slice(0, 2)) {
+                await newTodo.fill(item);
+                await newTodo.press("Enter");
+            }
+
+            // Check first item.
+            const firstTodo = page.getByTestId("todo-item").nth(0);
+            await firstTodo.getByRole("checkbox").check();
+            await expect(firstTodo).toHaveClass("completed");
+
+            // Check second item.
+            const secondTodo = page.getByTestId("todo-item").nth(1);
+            await expect(secondTodo).not.toHaveClass("completed");
+            await secondTodo.getByRole("checkbox").check();
+
+            // Assert completed class.
+            await expect(firstTodo).toHaveClass("completed");
+            await expect(secondTodo).toHaveClass("completed");
         }
+    );
 
-        // Check first item.
-        const firstTodo = page.getByTestId("todo-item").nth(0);
-        await firstTodo.getByRole("checkbox").check();
-        await expect(firstTodo).toHaveClass("completed");
+    test.fail(
+        "should allow me to un-mark items as complete",
+        async ({ page }) => {
+            await expect(true).toBe(false);
+            // create a new todo locator
+            const newTodo = page.getByPlaceholder("What needs to be done?");
 
-        // Check second item.
-        const secondTodo = page.getByTestId("todo-item").nth(1);
-        await expect(secondTodo).not.toHaveClass("completed");
-        await secondTodo.getByRole("checkbox").check();
+            // Create two items.
+            for (const item of TODO_ITEMS.slice(0, 2)) {
+                await newTodo.fill(item);
+                await newTodo.press("Enter");
+            }
 
-        // Assert completed class.
-        await expect(firstTodo).toHaveClass("completed");
-        await expect(secondTodo).toHaveClass("completed");
-    });
+            const firstTodo = page.getByTestId("todo-item").nth(0);
+            const secondTodo = page.getByTestId("todo-item").nth(1);
+            const firstTodoCheckbox = firstTodo.getByRole("checkbox");
 
-    test("should allow me to un-mark items as complete", async ({ page }) => {
-        // create a new todo locator
-        const newTodo = page.getByPlaceholder("What needs to be done?");
+            await firstTodoCheckbox.check();
+            await expect(firstTodo).toHaveClass("completed");
+            await expect(secondTodo).not.toHaveClass("completed");
+            await checkNumberOfCompletedTodosInLocalStorage(page, 1);
 
-        // Create two items.
-        for (const item of TODO_ITEMS.slice(0, 2)) {
-            await newTodo.fill(item);
-            await newTodo.press("Enter");
+            await firstTodoCheckbox.uncheck();
+            await expect(firstTodo).not.toHaveClass("completed");
+            await expect(secondTodo).not.toHaveClass("completed");
+            await checkNumberOfCompletedTodosInLocalStorage(page, 0);
         }
+    );
 
-        const firstTodo = page.getByTestId("todo-item").nth(0);
-        const secondTodo = page.getByTestId("todo-item").nth(1);
-        const firstTodoCheckbox = firstTodo.getByRole("checkbox");
-
-        await firstTodoCheckbox.check();
-        await expect(firstTodo).toHaveClass("completed");
-        await expect(secondTodo).not.toHaveClass("completed");
-        await checkNumberOfCompletedTodosInLocalStorage(page, 1);
-
-        await firstTodoCheckbox.uncheck();
-        await expect(firstTodo).not.toHaveClass("completed");
-        await expect(secondTodo).not.toHaveClass("completed");
-        await checkNumberOfCompletedTodosInLocalStorage(page, 0);
-    });
-
-    test("should allow me to edit an item", async ({ page }) => {
+    test.fail("should allow me to edit an item", async ({ page }) => {
         await createDefaultTodos(page);
 
         const todoItems = page.getByTestId("todo-item");

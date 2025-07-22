@@ -12,7 +12,7 @@ test(
     "get started link",
     { tag: ["@smoke", "@regression"] },
     async ({ page }) => {
-        test.step("go to playwright.dev", async () => {
+        await test.step("go to playwright.dev", async () => {
             await page.goto("https://playwright.dev/");
         });
         // Click the get started link.

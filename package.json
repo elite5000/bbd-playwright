@@ -23,6 +23,7 @@
     "dependencies": {
         "chart.js": "^4.5.0",
         "cheerio": "^1.1.0",
+        "colors": "^1.4.0",
         "react": "^19.1.0",
         "react-dom": "^19.1.0",
         "ts-node": "^10.9.2",
